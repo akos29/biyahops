@@ -48,34 +48,34 @@ const Navigation = () => {
 							<Nav.Link>Home</Nav.Link>
 						</Link>
 						<NavDropdown title='About Us'>
-							<NavDropdown.Item href={prefix + '/about'}>
-								<Link className='navlink' href={prefix + '/about'} passHref>
+							<NavDropdown.Item href='/about'>
+								<Link className='navlink' href='/about' passHref>
 									<Nav.Link>About BD lithops Con</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item href='#howwework'>
-								<Link className='navlink' href={prefix + '/howWeWork'} passHref>
+								<Link className='navlink' href='/howWeWork' passHref>
 									<Nav.Link>How We Work</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
 
-						<Link href={prefix + '/projects'} passHref>
+						<Link href='/projects' passHref>
 							<Nav.Link>Projects</Nav.Link>
 						</Link>
 						<NavDropdown title='Media'>
 							<NavDropdown.Item href='#gallery'>
-								<Link className='navlink' href={prefix + '/gallery'} passHref>
+								<Link className='navlink' href='/gallery' passHref>
 									<Nav.Link>Gallery</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item href='#news'>
-								<Link className='navlink' href={prefix + '/news'} passHref>
+								<Link className='navlink' href='/news' passHref>
 									<Nav.Link>News</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
-						<Link href={prefix + '/contact'} passHref>
+						<Link href='/contact' passHref>
 							<Nav.Link>Contact Us</Nav.Link>
 						</Link>
 					</Nav>
