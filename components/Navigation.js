@@ -10,7 +10,7 @@ import ScrollArrow from './ScrollArrow';
 
 const Navigation = () => {
 	const cx = (...classNames) => classNames.join(' ');
-	const prefix = '/biyahops';
+	const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 
 	return (
 		<>
