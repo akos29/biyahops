@@ -5,6 +5,8 @@ import projectStyle from '../styles/Project.module.css';
 
 const NewsItem = ({ project }) => {
 	const cx = (...classNames) => classNames.join(' ');
+	const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
+
 	return (
 		<>
 			<Col md={4}>
@@ -14,7 +16,7 @@ const NewsItem = ({ project }) => {
 							<div
 								className={cx(projectStyle.flipBoxFront, projectStyle.bgImage)}
 								style={{
-									background: "url('./security.jpg')",
+									background: `url(${prefix}+'/security.jpg')`,
 									filter: 'blur(0.1px)',
 									WebkitFilter: 'blur(0.1px)',
 									height: '100%',
