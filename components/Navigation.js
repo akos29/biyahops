@@ -48,7 +48,7 @@ const Navigation = () => {
 							<Nav.Link>Home</Nav.Link>
 						</Link>
 						<NavDropdown title='About Us'>
-							<NavDropdown.Item href='#AboutUs'>
+							<NavDropdown.Item href={prefix + '/about'}>
 								<Link className='navlink' href={prefix + '/about'} passHref>
 									<Nav.Link>About BD lithops Con</Nav.Link>
 								</Link>
