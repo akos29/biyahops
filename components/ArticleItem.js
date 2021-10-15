@@ -6,11 +6,7 @@ import Card from 'react-bootstrap/Card';
 const ArticleItem = ({ project }) => {
 	return (
 		<Col md={6}>
-			<Link
-				href='/project/[id]'
-				as={`/project/${project.id}`}
-				project={project}
-			>
+			<Link href='/project/[id]' as={`/project/${project.id}`}>
 				<Card className={articleStyle.card}>
 					<Card.Body>
 						<h3> {project.title.rendered}</h3>

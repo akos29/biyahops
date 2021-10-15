@@ -1,59 +1,60 @@
-import { server } from "../../../config2";
-import Link from "next/link";
-import Meta from "../../../components/Meta";
+import { server } from '../../../config2';
+import Link from 'next/link';
+import Meta from '../../../components/Meta';
 
 const project = ({ project }) => {
-  //   const router = useRouter();
-  //   const { id } = router.query;
+	//   const router = useRouter();
+	//   const { id } = router.query;
 
-  return (
-    <>
-      <Meta
-        title={project.title.rendered}
-        description={project.content.rendered}
-      />
-      <div className="container">
-        <h1 className="ip-5">{project.title.rendered}</h1>
-        <div
-          className="overflow"
-          dangerouslySetInnerHTML={{ __html: project.content.rendered }}
-        ></div>
+	return (
+		<>
+			<Meta title={project.id} description={project.content} />
+			<div className='container'>
+				<h1 className='ip-5'>{project.id}</h1>
+				<div
+					className='overflow'
+					dangerouslySetInnerHTML={{ __html: project.content }}
+				></div>
+				<div
+					className='overflow'
+					dangerouslySetInnerHTML={{ __html: project.modified }}
+				></div>
 
-        <br />
-        <Link href="/"> Go Back &larr;</Link>
-      </div>
-    </>
-  );
+				<br />
+				<Link href='/'> Go Back &larr;</Link>
+			</div>
+		</>
+	);
 };
 
 export const getStaticProps = async (context) => {
-  const res = await fetch(
-    `${server}/wp-json/wp/v2/project/
+	const res = await fetch(
+		`${server}/wp-json/wp/v2/project/
     ${context.params.id}`
-  );
-  const project = await res.json();
+	);
+	const project = await res.json();
 
-  console.log(project);
+	console.log(project.id);
 
-  return {
-    props: {
-      project,
-    },
-  };
+	return {
+		props: {
+			project,
+		},
+	};
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`${server}/wp-json/wp/v2/project`);
-  const projects = await res.json();
+	const res = await fetch(`${server}/wp-json/wp/v2/project`);
+	const projects = await res.json();
 
-  const ids = projects.map((project) => project.id);
+	const ids = projects.map((project) => project.id);
 
-  const paths = ids.map((id) => ({ params: { id: id.toString() } }));
+	const paths = ids.map((id) => ({ params: { id: id.toString() } }));
 
-  return {
-    paths,
-    fallback: false,
-  };
+	return {
+		paths,
+		fallback: false,
+	};
 };
 
 // export const getStaticProps = async (context) => {
