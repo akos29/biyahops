@@ -35,7 +35,7 @@ const Navigation = () => {
 				<Navbar.Brand href={prefix} className='nav'>
 					<Link href={prefix}>
 						<img
-							src='/bdlogo5.png'
+							src={prefix + '/bdlogo5.png'}
 							alt='Lithops logo'
 							className={navStyle.brand}
 						/>
