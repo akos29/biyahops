@@ -32,7 +32,7 @@ const Navigation = () => {
 				sticky='top'
 				className={navStyle.myNav}
 			>
-				<Navbar.Brand href={prefix} className='nav'>
+				<Navbar.Brand href='/' className='nav'>
 					<Link href={prefix}>
 						<img
 							src={prefix + '/bdlogo5.png'}
