@@ -1,6 +1,6 @@
-import Nav from '../components/navigation.js';
+import Nav from './Navigation';
 import Meta from './Meta.js';
-import Footer from './Footer.js';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
 	return (
