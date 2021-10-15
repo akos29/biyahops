@@ -1,0 +1,94 @@
+.flipBox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 90%;
+  height: 350px;
+  background-color: none;
+  perspective: 1000px;
+  /* box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
+  box-sizing: border-box;
+  margin-bottom: 2%;
+}
+
+.flipBoxInner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.flipBoxInner p {
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.flipBox:hover .flipBoxInner {
+  transform: rotateY(180deg);
+}
+
+.flipBoxFront,
+.flipBoxBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  object-fit: cover;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.flipBoxFront {
+  background-color: transparent;
+  color: black;
+}
+
+.flipBoxBack {
+  background-color: var(--bs-secondary);
+  color: var(--bs-black);
+
+  transform: rotateY(180deg);
+}
+
+.bgImage {
+  background: url("../public/Safeguard.jpg");
+  filter: blur(0.1px);
+  -webkit-filter: blur(0.1px);
+
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgText {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}

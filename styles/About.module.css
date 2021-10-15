@@ -1,0 +1,32 @@
+.aboutContainer {
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.optionBox {
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.panelContent {
+  padding: 2em;
+
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+p.panelContent {
+  text-align: justify;
+}

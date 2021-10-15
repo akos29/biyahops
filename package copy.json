@@ -1,0 +1,26 @@
+{
+  "name": "biya",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8084",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@popperjs/core": "^2.9.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.0-beta3",
+    "bootstrap-icons": "^1.4.1",
+    "bootstrap-next": "^1.0.5",
+    "next": "10.1.2",
+    "react": "17.0.2",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.32.11"
+  },
+  "proxy": "http://localhost:8000"
+}

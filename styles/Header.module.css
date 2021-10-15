@@ -1,0 +1,13 @@
+.slideContainer {
+  height: 10vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.slide {
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}

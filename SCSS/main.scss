@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+//Variables
+$font-family-sans-serif: "Montserrat", sans-serif;
+
+$enable-shadows: true;
+$primary: hsl(212, 79%, 13%);
+$secondary: #f6c54f;
+$green: #d3f64f;
+$blue: #c8d8fc;
+$gray: #a3a3a3;
+$gray-dark: #333;
+$red: #f6724f;
+$danger: hsl(212, 79%, 13%);
+
+$body-color: --bs-black;
+$body-bg: #f8f9fa;
+$list-group-bg: $blue;
+
+// $dropdown-bg: #f4f4f4;
+
+$navbar-light-active-color: lighten($primary, 5%);
+$navbar-light-hover-color: $gray-dark;
+$navbar-light-color: $primary;
+
+$nav-link-color: $primary;
+$nav-link-font-size: 1.25rem;
+$nav-link-hover-color: $gray-dark;
+
+$dropdown-link-color: $secondary;
+$dropdown-link-hover-color: $gray-dark;
+$dropdown-link-hover-bg: $secondary;
+$dropdown-link-active-bg: $body-bg;
+
+// $navbar-dark-color: $primary;
+// $navbar-dark-active-color: $secondary;
+// $navbar-dark-hover-color: $secondary;
+// $navbar-dark-brand-hover-color: $secondary;
+
+// $navbar-nav-link-padding-y: 0;
+// $navbar-nav-link-padding-b: 0;
+// $navbar-padding-y: 0;
+// $navbar-padding-b: 0m;
+// $navbar-brand-margin-end: 0;
+// $navbar-brand-padding-b: 0;
+// $navbar-brand-padding-y: 0;
+// $nav-link-padding-y: 0;
+// $nav-link-padding-b: 0;
+
+// $container-padding-x: 0;
+
+//Heading
+$headings-color: $primary;
+
+// $navbar-light-color: #e6b82e;
+// $navbar-light-active-color :#e6b82e49;
+
+//Utilities
+
+// $utilities: () !default;
+// $utilities: map-merge(
+//   (
+//       "input-padding": (
+//         property: padding,
+//         class: ip,
+//         values: (
+//           0: 0,
+//           1: 0.3rem,
+//           2: 0.5rem,
+//           3: 0.7rem,
+//           4: 0.9rem,
+//           5: 1rem,
+//         ),
+//       ),
+//     )
+//     $utilities
+// );
+
+$utilities: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$utilities: map-merge(
+  (
+    "input-padding": (
+      property: padding,
+      class: ip,
+      values: (
+        0: 0,
+        1: 0.3rem,
+        2: 0.5rem,
+        3: 0.7rem,
+        4: 0.9rem,
+        5: 1rem,
+      ),
+    ),
+    "bd-width": (
+      property: width,
+      class: bdw,
+      values: (
+        1: 6.6667%,
+        2: 13.3333%,
+        3: 20%,
+        4: 26.66666667%,
+        5: 33.33333333%,
+        6: 40%,
+        7: 46.66666667%,
+        8: 53.33333333%,
+        9: 60,
+        10: 66.66666667%,
+        11: 73.33333333%,
+        12: 80%,
+        13: 86.66666667%,
+        14: 93.33333333%,
+        15: 100%,
+      ),
+    ),
+  ),
+  $utilities
+);
+
+@import "./style";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
