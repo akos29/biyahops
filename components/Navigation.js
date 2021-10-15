@@ -32,7 +32,7 @@ const Navigation = () => {
 				sticky='top'
 				className={navStyle.myNav}
 			>
-				<Navbar.Brand href='/' className='nav'>
+				<Navbar.Brand href={prefix} className='nav'>
 					<Link href={prefix}>
 						<img
 							src='/bdlogo5.png'
@@ -49,7 +49,7 @@ const Navigation = () => {
 						</Link>
 						<NavDropdown title='About Us'>
 							<NavDropdown.Item href='#AboutUs'>
-								<Link className='navlink' href='/about' passHref>
+								<Link className='navlink' href={prefix + '/about'} passHref>
 									<Nav.Link>About BD lithops Con</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
@@ -60,7 +60,7 @@ const Navigation = () => {
 							</NavDropdown.Item>
 						</NavDropdown>
 
-						<Link href='/projects' passHref>
+						<Link href={prefix + '/projects'} passHref>
 							<Nav.Link>Projects</Nav.Link>
 						</Link>
 						<NavDropdown title='Media'>
@@ -70,12 +70,12 @@ const Navigation = () => {
 								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item href='#news'>
-								<Link className='navlink' href='/news' passHref>
+								<Link className='navlink' href={prefix + '/news'} passHref>
 									<Nav.Link>News</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
-						<Link href='/contact' passHref>
+						<Link href={prefix + '/contact'} passHref>
 							<Nav.Link>Contact Us</Nav.Link>
 						</Link>
 					</Nav>
