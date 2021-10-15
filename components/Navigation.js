@@ -44,7 +44,7 @@ const Navigation = () => {
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='mr-auto'>
-						<Link href={prefix} passHref>
+						<Link href='/' passHref>
 							<Nav.Link>Home</Nav.Link>
 						</Link>
 						<NavDropdown title='About Us'>

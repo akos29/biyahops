@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Header = () => {
 	const cx = (...classNames) => classNames.join(' ');
+	const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 
 	return (
 		<>
@@ -11,7 +12,7 @@ const Header = () => {
 					{/* <Link href="/project/[id]" as={`/project/1`}> */}
 					{/* <ResponsiveEmbed aspectRatio="16by9"> */}
 					<img
-						src='/slide1.jpg'
+						src={prefix + '/slide1.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
 					/>
@@ -27,7 +28,7 @@ const Header = () => {
 				<Carousel.Item interval={5000}>
 					{/* <Link href="/project/[id]" as={`/project/2`}> */}
 					<img
-						src='/slide2.jpg'
+						src={prefix + '/slide2.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
 					/>
@@ -41,7 +42,7 @@ const Header = () => {
 				<Carousel.Item>
 					{/* <Link href="/project/[id]" as={`/project/3`}> */}
 					<img
-						src='/slide3.jpg'
+						src={prefix + '/slide3.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
 					/>
