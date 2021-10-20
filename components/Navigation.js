@@ -4,8 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import the FontAwesomeIcon component
-import { faSearch, faPhone } from '@fortawesome/free-solid-svg-icons'; // import the icons you need
+
+import { FaPhoneAlt, FaFacebook, FaTelegram } from 'react-icons/fa';
 import ScrollArrow from './ScrollArrow';
 
 const Navigation = () => {
@@ -15,13 +15,20 @@ const Navigation = () => {
 	return (
 		<>
 			<div className={navStyle.topBox}>
-				<p className={navStyle.social}>
-					<FontAwesomeIcon icon={faPhone} />
-					+251 999 996 968
-				</p>
-				<p className={navStyle.social}>
-					<FontAwesomeIcon icon={faSearch} />
-				</p>
+				<a
+					className={navStyle.social}
+					href='https://www.facebook.com/safariictsolutionsplc'
+				>
+					<FaFacebook />
+				</a>
+				<a href='https://t.me/safariictsolutions' className={navStyle.social}>
+					<FaTelegram />
+				</a>
+
+				<a href='tel:+251912055400' className={navStyle.social}>
+					<FaPhoneAlt />
+					{/* +251 912 055 400 */}
+				</a>
 			</div>
 
 			<Navbar

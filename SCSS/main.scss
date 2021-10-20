@@ -12,9 +12,10 @@ $gray: #a3a3a3;
 $gray-dark: #333;
 $red: #f6724f;
 $danger: hsl(212, 79%, 13%);
+$silver:#d5d5d7;
 
 $body-color: --bs-black;
-$body-bg: #f8f9fa;
+$body-bg: $silver;
 $list-group-bg: $blue;
 
 // $dropdown-bg: #f4f4f4;
