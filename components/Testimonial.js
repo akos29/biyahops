@@ -48,7 +48,7 @@ const Testimonial = () => {
 										Board Member, BD Lithops
 									</cite>{' '}
 									<img
-										src={prefix + '/dawit-adera.jpg'}
+										src={prefix + '/Dawit-Adera.jpg'}
 										alt='Dawit Adera'
 										height='50'
 										style={{
