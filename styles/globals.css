@@ -1,4 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  list-style:none;
+
+}
+
 main {
   display: block;
   min-height: 80vh;
+}
+
+body {
+  background: var(--bs-light);
+  
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15em;
+  margin: 0;
+}
+p {
+  opacity: 1;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
 }

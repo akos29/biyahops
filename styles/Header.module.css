@@ -2,6 +2,7 @@
   height: 10vh;
   margin: 0px;
   padding: 0px;
+  
 }
 
 .slide {
@@ -10,4 +11,11 @@
   width: 100%;
   object-fit: cover;
   box-sizing: border-box;
+  
+
+transform: translate3d(0px, 0px, 0px);
+transform-origin: 415px 180px 0px;
+perspective: 4000px;
+opacity: 1;
+/* display: block; */
 }

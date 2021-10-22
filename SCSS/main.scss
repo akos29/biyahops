@@ -1,35 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 //Variables
-$font-family-sans-serif: "Montserrat", sans-serif;
+$font-family-sans-serif: "Playfair Display", sans-serif;
 
 $enable-shadows: true;
-$primary: hsl(212, 79%, 13%);
+$primary: #071F3B;
 $secondary: #f6c54f;
 $green: #d3f64f;
-$blue: #c8d8fc;
+$blue: #97999e;
 $gray: #a3a3a3;
 $gray-dark: #333;
 $red: #f6724f;
-$danger: hsl(212, 79%, 13%);
-$silver:#d5d5d7;
+$danger:#071F3B;
+$light:#d5d5d7;
 
-$body-color: --bs-black;
-$body-bg: $silver;
+$body-color:color(--bs-black) ;
+$body-bg: colorContrast(--bs-black);
 $list-group-bg: $blue;
 
 // $dropdown-bg: #f4f4f4;
 
 $navbar-light-active-color: lighten($primary, 5%);
-$navbar-light-hover-color: $gray-dark;
+$navbar-light-hover-color: $light;
 $navbar-light-color: $primary;
 
 $nav-link-color: $primary;
 $nav-link-font-size: 1.25rem;
-$nav-link-hover-color: $gray-dark;
+$nav-link-hover-color: $light; //$gray-dark;
 
 $dropdown-link-color: $secondary;
-$dropdown-link-hover-color: $gray-dark;
+$dropdown-link-hover-color: $light; //$gray-dark;
 $dropdown-link-hover-bg: $secondary;
 $dropdown-link-active-bg: $body-bg;
 
@@ -118,5 +118,7 @@ $utilities: map-merge(
   $utilities
 );
 
-@import "./style";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/variables";
+@import "./style";
+

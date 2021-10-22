@@ -15,6 +15,7 @@ const Header = () => {
 						src={prefix + '/slide1.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
+						style={{ left: 0 }}
 					/>
 					{/* 
           </ResponsiveEmbed> */}
