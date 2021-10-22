@@ -24,7 +24,7 @@ const Testimonial = () => {
 									Mr. Belay Adera{' '}
 									<cite title='CEO, BD Lithops'>CEO, BD Lithops</cite>{' '}
 									<img
-										src={prefix + './any.jfif'}
+										src={prefix + '/any.jfif'}
 										alt=''
 										height='50px'
 										style={{
@@ -48,7 +48,7 @@ const Testimonial = () => {
 										Board Member, BD Lithops
 									</cite>{' '}
 									<img
-										src={prefix + './dawit adera.jpg'}
+										src={prefix + '/dawit adera.jpg'}
 										alt='Dawit Adera'
 										height='50'
 										style={{
