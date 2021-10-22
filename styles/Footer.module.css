@@ -45,7 +45,7 @@ a.footerLink {
 }
 
 a.footerLink:hover {
-  color: var(--bs-primary);
+ /*  color: var(--bs-light); */
   font-size: 1.01rem;
   transition: ease;
 }
@@ -345,4 +345,5 @@ a.ftFooter {
 }
 a:hover.ftFooter {
   text-decoration: underline;
+  color: var(--bs-light);
 }

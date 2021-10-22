@@ -4,7 +4,7 @@
 import Layout from '../components/Layout';
 import '../styles/globals.css';
 /*import "bootstrap/dist/css/bootstrap.css";*/
-import '../css/main.css';
+import '../scss/main.css';
 
 function MyApp({ Component, pageProps }) {
 	return (

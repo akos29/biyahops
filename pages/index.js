@@ -10,7 +10,7 @@ export default function Home({ projects }) {
 		<>
 			<Meta title='Welcome to Lithops' />
 			<Header />
-			<div className='container' style={{ backgroundColor: '#f8f9fa' }}>
+			<div className='container' /* style={{ backgroundColor: '#f8f9fa' }} */>
 				<h2 className='ip-5'>Latest News </h2>
 
 				<News projects={projects} />

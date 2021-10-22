@@ -4,17 +4,17 @@
 
 main {
   padding: 0 0 2% 0;
-}
+} 
 body {
-  background-color: $body-bg;
+  background-color: $light;
   background-attachment: fixed;
- /*  background-image: url("/arch.png"); */
+  /* background-image: url("/arch.png"); */
   background-repeat: no-repeat;
   background-size: auto 109vh;
   backdrop-filter: var(--bs-secondary);
   background-position: top right;
   // filter: brightness(90%);
-  // filter: grayscale(70%);
+  // filter: grayscale(70%); 
 }
 .overflow {
   text-overflow: ellipsis;

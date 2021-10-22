@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
+
 const Testimonial = () => {
 	return (
 		<>
@@ -22,7 +24,7 @@ const Testimonial = () => {
 									Mr. Belay Adera{' '}
 									<cite title='CEO, BD Lithops'>CEO, BD Lithops</cite>{' '}
 									<img
-										src='./any.jfif'
+										src={prefix + './any.jfif'}
 										alt=''
 										height='50px'
 										style={{
@@ -46,7 +48,7 @@ const Testimonial = () => {
 										Board Member, BD Lithops
 									</cite>{' '}
 									<img
-										src='./dawit adera.jpg'
+										src={prefix + './dawit adera.jpg'}
 										alt='Dawit Adera'
 										height='50'
 										style={{

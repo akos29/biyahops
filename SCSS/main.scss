@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 //Variables
 $font-family-sans-serif: "Playfair Display", sans-serif;
@@ -7,29 +7,30 @@ $enable-shadows: true;
 $primary: #071F3B;
 $secondary: #f6c54f;
 $green: #d3f64f;
-$blue: #97999e;
+$blue: #c8d8fc;
 $gray: #a3a3a3;
 $gray-dark: #333;
 $red: #f6724f;
 $danger:#071F3B;
 $light:#d5d5d7;
+$black:#000;
 
-$body-color:color(--bs-black) ;
-$body-bg: colorContrast(--bs-black);
+$body-color:$black ;
+$body-bg: $light;
 $list-group-bg: $blue;
 
 // $dropdown-bg: #f4f4f4;
 
 $navbar-light-active-color: lighten($primary, 5%);
-$navbar-light-hover-color: $light;
+$navbar-light-hover-color: $gray-dark;
 $navbar-light-color: $primary;
 
 $nav-link-color: $primary;
 $nav-link-font-size: 1.25rem;
-$nav-link-hover-color: $light; //$gray-dark;
+$nav-link-hover-color: $gray-dark;
 
 $dropdown-link-color: $secondary;
-$dropdown-link-hover-color: $light; //$gray-dark;
+$dropdown-link-hover-color:$gray-dark;
 $dropdown-link-hover-bg: $secondary;
 $dropdown-link-active-bg: $body-bg;
 

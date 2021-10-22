@@ -13,7 +13,7 @@ main {
 }
 
 body {
-  background: var(--bs-light);
+  /* background: var(--bs-light); */
   
   font-family: 'Playfair Display', serif;
   font-size: 1.15em;

@@ -11,12 +11,12 @@ const Meta = ({ keyword, description, title }) => {
 				<meta name='description' content={description} />
 				<link rel='icon' href='/favicon.ico' />
 
-				<link rel='preconnect' href='https://fonts.googleapis.com' />
+				{/* 	<link rel='preconnect' href='https://fonts.googleapis.com' />
 				<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
 				<link
 					href='https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'
 					rel='stylesheet'
-				/>
+				/> */}
 				<title>{title}</title>
 			</Head>
 		</>
