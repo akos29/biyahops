@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Exo:wght@100&display=swap');
 //Variables
-$font-family-sans-serif: "Playfair Display", sans-serif;
+$font-family-sans-serif: "Exo", sans-serif;
+$heading-font-family: "Autour One", cursive;
 
 $enable-shadows: true;
 $primary: #071F3B;
@@ -12,7 +12,7 @@ $gray: #a3a3a3;
 $gray-dark: #333;
 $red: #f6724f;
 $danger:#071F3B;
-$light:#d5d5d7;
+$light:#f8f9fa;
 $black:#000;
 
 $body-color:$black ;

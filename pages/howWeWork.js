@@ -9,13 +9,15 @@ import Quality from '../components/Quality_H';
 import OurValues from '../components/OurValues_H';
 import OrganizationalPolicy from '../components/OrganizationalPolicy_H';
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
+
 const howWeWork = () => {
 	return (
 		<>
 			<Container>
-				<h1 className='ip-5'>How we Work</h1>
+				<h1 className='ip-5'>How We Work</h1>
 
-				<Tab.Container
+				{/* <Tab.Container
 					id='list-group-tabs-example'
 					defaultActiveKey='#SafetyProcedure'
 				>
@@ -59,7 +61,31 @@ const howWeWork = () => {
 							</Tab.Content>
 						</Col>
 					</Row>
-				</Tab.Container>
+				</Tab.Container> */}
+
+				<Row>
+					<Col sm={6}>
+						{' '}
+						<p>
+							Devoted to enhancing the road construction industry in Ethiopia by
+							providing the highest quality projects and services, utilizing
+							high-end technologies and approaches and working in partnership
+							with clients to deliver top-quality solutions. Our work practices
+							are highlighted by a culture for environmental responsibility and
+							safety while creating an environment of growth and respect amongst
+							our employees and for the communities that we serve.
+						</p>
+					</Col>
+					<Col sm={4}>
+						{' '}
+						<img
+							src={prefix + '/slide1.jpg'}
+							alt='How we work'
+							/* width='300px'
+							height='500px' */
+						/>
+					</Col>
+				</Row>
 			</Container>
 		</>
 	);
