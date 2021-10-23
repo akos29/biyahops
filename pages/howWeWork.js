@@ -14,7 +14,7 @@ const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 const howWeWork = () => {
 	return (
 		<>
-			<Container>
+			<div className='ip-5'>
 				<h1 className='ip-5'>How We Work</h1>
 
 				{/* <Tab.Container
@@ -64,7 +64,7 @@ const howWeWork = () => {
 				</Tab.Container> */}
 
 				<Row>
-					<Col sm={6}>
+					<Col sm={7}>
 						{' '}
 						<p>
 							Devoted to enhancing the road construction industry in Ethiopia by
@@ -76,7 +76,7 @@ const howWeWork = () => {
 							our employees and for the communities that we serve.
 						</p>
 					</Col>
-					<Col sm={4}>
+					<Col sm={5}>
 						{' '}
 						<img
 							src={prefix + '/slide1.jpg'}
@@ -86,7 +86,7 @@ const howWeWork = () => {
 						/>
 					</Col>
 				</Row>
-			</Container>
+			</div>
 		</>
 	);
 };
