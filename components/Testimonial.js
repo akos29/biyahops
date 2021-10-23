@@ -1,10 +1,13 @@
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import testimonialStyle from '../styles/Testimonial.module.css';
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 
 const Testimonial = () => {
+	const cx = (...classNames) => classNames.join(' ');
+
 	return (
 		<>
 			<Container
@@ -16,7 +19,7 @@ const Testimonial = () => {
 					<Row>
 						<Col md={6}>
 							<blockquote className='blockquote'>
-								<p className='mb-0 ip-3'>
+								<p className={cx(testimonialStyle.quote, 'mb-0 ip-3')}>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
 									a.
 								</p>
@@ -38,11 +41,13 @@ const Testimonial = () => {
 						</Col>
 						<Col md={6}>
 							<blockquote className='blockquote'>
-								<p className='mb-0 ip-3'>
+								<p className={cx(testimonialStyle.quote, 'mb-0 ip-3')}>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
 									a.
 								</p>
-								<footer className='blockquote-footer '>
+								<footer
+									className={cx(testimonialStyle.quote, 'blockquote-footer ')}
+								>
 									Mr. Dawit Adera{' '}
 									<cite title='Board Member, BD Lithops'>
 										Board Member, BD Lithops
