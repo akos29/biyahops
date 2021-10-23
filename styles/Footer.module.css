@@ -1,63 +1,63 @@
-.footerAddress {
+ /*.footerAddress {
   position: absolute;
   left: 10px;
-  display: block;
+  display: flex;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding: 10vh 0px 20px 30px;
-}
+  padding: 10vh 0px 20px 30px; 
+}*/
 
-.footerVision {
+ /* .footerVision {
   position: relative;
   left: 10px;
-  display: block;
-  margin-block-start: 1em;
+  display: flex;
+ margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding: 20px 30px;
-  font-size: 1rem;
-}
-
+  font-size: 1rem; 
+}*/
+/* 
 .reference {
   position: relative;
   left: 0px;
-  display: block;
+  display: flex;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding: 20px 30px;
-}
+} */
 
-.footerHeader {
-  padding-top: 3%;
+/* .footerHeader {
+  padding-top: 5%;
 }
-
-a.footerLink {
+ */
+/* a.footerLink {
   display: block;
   position: relative;
   left: 0;
   color: var(--body-bg);
   font-size: 1rem;
-}
+} */
 
-a.footerLink:hover {
- /*  color: var(--bs-light); */
+/* a.footerLink:hover {
+  color: var(--bs-light);
   font-size: 1.01rem;
   transition: ease;
 }
-
-footer.footerBlock {
+ */
+/* footer.footerBlock {
   margin-top: 15px;
   padding: 0;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0.5px #f1c04a,
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
+} */
 
-.footerBottomBlock {
+/* .footerBottomBlock {
   position: relative;
   bottom: 0;
   color: var(--bs-secondary);
@@ -72,23 +72,23 @@ footer.footerBlock {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.2),
     0.3em 0.3em 1em rgba(0, 0, 0, 1);
 }
-
-.footerLogo {
+ */
+/* .footerLogo {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
-.footerBottomBlock p {
+/* .footerBottomBlock p {
   text-align: center;
-}
-.clearfix::after {
+} */
+/* .clearfix::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
-.footerBlock {
+/* .footerBlock {
   min-height: 220px;
   padding-top: 0;
   position: relative;
@@ -97,18 +97,18 @@ footer.footerBlock {
   margin-top: 10px;
   border-top: 2px solid var(--bs-primary);
   display: flex;
-}
-@media (max-width: 979px) {
+} */
+/* @media (max-width: 979px) {
   .footerBlock {
     min-height: 350px;
   }
-}
-.footerBlock .region-footer {
+} */
+/* .footerBlock .region-footer {
   padding: 5px 40px 0 40px;
   display: flex;
   flex-flow: row wrap;
-}
-.footerBlock .region-footer:before,
+} */
+/* .footerBlock .region-footer:before,
 .footerBlock .region-footer:after {
   content: " ";
   display: table;
@@ -124,37 +124,21 @@ footer.footerBlock {
 .footerBlock .sharing-block-footer .block-title {
   color: #fff;
   font-size: 1em;
-  line-height: 1.35714em;
+  line-height: 1.5em;
   font-weight: bold;
   margin-bottom: 5px;
-}
-@media (max-width: 979px) {
-  .footerBlock .sharing-block-footer .block-title {
-    font-size: 0.78571em;
-    line-height: 1.35714em;
-  }
-}
-@media (max-width: 659px) {
-  .footerBlock .sharing-block-footer .block-title {
-    font-size: 0.85714em;
-    line-height: 1.33333em;
-  }
-}
+} */
+
+
 .footerBlock li {
   list-style: none;
   margin: 0 10px 10px 0px;
 }
-@media (max-width: 979px) {
-  .footerBlock .region-footer {
-    padding: 15px 0 0 0;
-    margin: auto;
-    width: 660px;
-  }
-}
-.footerBlock .about-lafarge-holcim {
+
+/* .footerBlock .about-lafarge-holcim {
   margin-bottom: 20px;
   order: 2;
-}
+} */
 /* .footerBlock .about-lafarge-holcim .block-title {
   font-size: 1em;
   line-height: 1.27273em;
@@ -162,18 +146,8 @@ footer.footerBlock {
   font-weight: bold;
   margin-bottom: 20px;
 } */
-@media (max-width: 979px) {
-  .footerBlock .about-lafarge-holcim .block-title {
-    font-size: 0.78571em;
-    line-height: 1.27273em;
-  }
-}
-@media (max-width: 659px) {
-  .footerBlock .about-lafarge-holcim .block-title {
-    font-size: 0.85714em;
-    line-height: 1.58333em;
-  }
-}
+
+
 .footerBlock .about-lafarge-holcim a,
 .footerBlock .about-lafarge-holcim a:visited {
   color: #fff;
@@ -185,50 +159,7 @@ footer.footerBlock {
   font-size: 0.78571em;
   line-height: 1.27273em;
 }
-@media (max-width: 979px) {
-  .footerBlock .about-lafarge-holcim .content {
-    font-size: 0.78571em;
-    line-height: 1.27273em;
-  }
-}
-@media (max-width: 659px) {
-  .footerBlock .about-lafarge-holcim .content {
-    font-size: 0.85714em;
-    line-height: 1.66667em;
-  }
-}
-@media (max-width: 979px) {
-  .footerBlock .about-lafarge-holcim {
-    width: 40%;
-    float: right;
-    order: 3;
-  }
-  .footerBlock .about-lafarge-holcim .content {
-    column-count: 1;
-  }
-}
-@media (max-width: 659px) {
-  .footerBlock .about-lafarge-holcim {
-    order: 3;
-    margin-top: 0;
-    margin-bottom: 30px !important;
-  }
-}
-@media (max-width: 659px) {
-  .footerBlock .region-footer {
-    width: 320px;
-    margin: auto;
-  }
-  .footerBlock .block-block {
-    width: 100%;
-    vertical-align: top;
-    display: inline-block;
-    float: none;
-  }
-  .footerBlock .last {
-    display: inline-block;
-  }
-}
+
 
 .ftUl {
   list-style: none;
@@ -237,12 +168,15 @@ footer.footerBlock {
 
 .footer {
   background-color: var(--bs-secondary);
-  color: var(--bs-gray-dark);
+  color: var(--bs-primary);
   line-height: 1.5;
+  
+ 
 }
 a.footer {
   text-decoration: none;
-  color: var(--bs-gray-dark);
+  color: var(--bs-primary);
+  
 }
 a:hover.footer {
   text-decoration: underline;
@@ -255,24 +189,44 @@ a:hover.footer {
 }
 
 .ftMain {
-  padding: 1.25rem 1.875rem;
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--bs-secondary);
-}
-.ftMainItem {
-  padding: 1.25rem;
-  min-width: 12.5rem /*200px*/;
-}
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction:row;
+  margin-left: auto;
+  row-gap: 10px;
+  column-gap: 2em;
+  margin : 0 3em;
+padding: 2em;
+font-size: 1.1rem;
+    
 
-@media only screen and (min-width: 29.8125rem /*477px*/) {
+
+}
+.ftMain> .item3 {
+ flex: 2;
+}
+  
+
+
+@media only screen and (max-width: 979px ) {
   .ftMain {
     justify-content: space-around;
+    align-content: center;
+    font-size:1rem ;
+    margin : 0 2em;
+  
   }
 }
-@media only screen and (min-width: 77.5rem /*1240px*/) {
+@media only screen and (max-width: 659px ) {
   .ftMain {
-    justify-content: space-evenly;
+  padding: 1rem ;
+  margin: 2rem 1rem; 
+  flex-direction: column;
+  justify-content:flex-start; 
+  align-content: center;
+  font-size: 1.1rem;
   }
 }
 
@@ -295,7 +249,7 @@ input[type="submit"].footerForm {
 }
 
 .ftSocial {
-  padding: 0 1.875rem 1.25rem;
+  padding: 0 ;
 }
 .ftSocialList {
   display: flex;
