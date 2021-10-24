@@ -54,18 +54,16 @@ const Navigation = () => {
 						<Link href='/' passHref>
 							<Nav.Link>Home</Nav.Link>
 						</Link>
-						<NavDropdown title='About Us'>
-							<NavDropdown.Item href='/about'>
-								<Link className='navlink' href='/about' passHref>
-									<Nav.Link>About BD lithops Con</Nav.Link>
-								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item href='#howwework'>
-								<Link className='navlink' href='/howWeWork' passHref>
-									<Nav.Link>How We Work</Nav.Link>
-								</Link>
-							</NavDropdown.Item>
-						</NavDropdown>
+						<Link className='navlink' href='/about' passHref>
+							<Nav.Link>About Us</Nav.Link>
+						</Link>
+						<Link className='navlink' href='/howWeWork' passHref>
+							<Nav.Link>How We Work</Nav.Link>
+						</Link>
+						{/* <NavDropdown title='About Us'>
+							<NavDropdown.Item href='/about'></NavDropdown.Item>
+							<NavDropdown.Item href='#howwework'></NavDropdown.Item>
+						</NavDropdown> */}
 
 						<Link href='/projects' passHref>
 							<Nav.Link>Projects</Nav.Link>
