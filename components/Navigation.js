@@ -57,13 +57,28 @@ const Navigation = () => {
 						<Link className='navlink' href='/about' passHref>
 							<Nav.Link>About Us</Nav.Link>
 						</Link>
-						<Link className='navlink' href='/howWeWork' passHref>
-							<Nav.Link>How We Work</Nav.Link>
-						</Link>
-						{/* <NavDropdown title='About Us'>
-							<NavDropdown.Item href='/about'></NavDropdown.Item>
-							<NavDropdown.Item href='#howwework'></NavDropdown.Item>
-						</NavDropdown> */}
+
+						<NavDropdown title='Our Work'>
+							<NavDropdown.Item href='/howWeWork'>
+								<Link className='navlink' href='/howWeWork#HowWeWork' passHref>
+									<Nav.Link>How We Work</Nav.Link>
+								</Link>
+							</NavDropdown.Item>
+							<NavDropdown.Item href='#howwework'>
+								<Link
+									className='navlink'
+									href='/howWeWork#WhereWeWork'
+									passHref
+								>
+									<Nav.Link>Where We Work</Nav.Link>
+								</Link>
+							</NavDropdown.Item>
+							<NavDropdown.Item href='#howwework'>
+								<Link className='navlink' href='/howWeWork#OurValues' passHref>
+									<Nav.Link>Our Values</Nav.Link>
+								</Link>
+							</NavDropdown.Item>
+						</NavDropdown>
 
 						<Link href='/projects' passHref>
 							<Nav.Link>Projects</Nav.Link>

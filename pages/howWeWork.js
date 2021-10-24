@@ -2,12 +2,12 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Tab from 'react-bootstrap/Tab';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Sustainbility from '../components/Sustainablity_H';
-import SafetyProcedure from '../components/SafetyProcedure_H';
-import Quality from '../components/Quality_H';
+
+import HowWeWork_H from '../components/HowWeWork_H';
+
 import OurValues from '../components/OurValues_H';
-import OrganizationalPolicy from '../components/OrganizationalPolicy_H';
+
+import WhereWeOperate_A from '../components/WhereWeOperate_A';
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 
@@ -15,77 +15,41 @@ const howWeWork = () => {
 	return (
 		<>
 			<div className='ip-5'>
-				<h1 className='ip-5'>How We Work</h1>
-
-				{/* <Tab.Container
+				<Tab.Container
 					id='list-group-tabs-example'
-					defaultActiveKey='#SafetyProcedure'
+					defaultActiveKey='#OurValues'
 				>
 					<Row>
-						<Col sm={4}>
+						<Col sm={3}>
 							<ListGroup>
-								<ListGroup.Item action href='#SafetyProcedure'>
-									Safety Procedure
+								<ListGroup.Item action href='#HowWeWork'>
+									How We Work
 								</ListGroup.Item>
-								<ListGroup.Item action href='#Sustainbility'>
-									Sustainbility
+								<ListGroup.Item action href='#WhereWeWork'>
+									Where We Work
 								</ListGroup.Item>
-								<ListGroup.Item action href='#Quality'>
-									Quality
-								</ListGroup.Item>
+
 								<ListGroup.Item action href='#OurValues'>
 									Our Values
-								</ListGroup.Item>
-								<ListGroup.Item action href='#OrganizationalPolicy'>
-									Organizational Policy
 								</ListGroup.Item>
 							</ListGroup>
 						</Col>
 						<Col sm={8}>
 							<Tab.Content>
-								<Tab.Pane eventKey='#SafetyProcedure'>
-									<SafetyProcedure />
+								<Tab.Pane eventKey='#HowWeWork'>
+									<HowWeWork_H />
 								</Tab.Pane>
-								<Tab.Pane eventKey='#Sustainbility'>
-									<Sustainbility />
+								<Tab.Pane eventKey='#WhereWeWork'>
+									<WhereWeOperate_A />
 								</Tab.Pane>
-								<Tab.Pane eventKey='#Quality'>
-									<Quality />
-								</Tab.Pane>
+
 								<Tab.Pane eventKey='#OurValues'>
 									<OurValues />
-								</Tab.Pane>
-								<Tab.Pane eventKey='#OrganizationalPolicy'>
-									<OrganizationalPolicy />
 								</Tab.Pane>
 							</Tab.Content>
 						</Col>
 					</Row>
-				</Tab.Container> */}
-
-				<Row>
-					<Col sm={7}>
-						{' '}
-						<p>
-							Devoted to enhancing the road construction industry in Ethiopia by
-							providing the highest quality projects and services, utilizing
-							high-end technologies and approaches and working in partnership
-							with clients to deliver top-quality solutions. Our work practices
-							are highlighted by a culture for environmental responsibility and
-							safety while creating an environment of growth and respect amongst
-							our employees and for the communities that we serve.
-						</p>
-					</Col>
-					<Col sm={5}>
-						{' '}
-						<img
-							src={prefix + '/slide1.jpg'}
-							alt='How we work'
-							/* width='300px'
-							height='500px' */
-						/>
-					</Col>
-				</Row>
+				</Tab.Container>
 			</div>
 		</>
 	);
