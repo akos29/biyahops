@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 
 const Road_P = () => {
+	const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
+
 	return (
 		<>
 			<Container fluid>
@@ -10,7 +12,7 @@ const Road_P = () => {
 				</h2>
 
 				<img
-					src='/Smooth-Wheel-Compactor.jpg'
+					src={prefix + '/Smooth-Wheel-Compactor.jpg'}
 					alt='Smooth-Wheel-Compactor'
 					style={{ width: 300, height: 'auto' }}
 				/>

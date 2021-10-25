@@ -42,7 +42,7 @@ const Navigation = () => {
 				<Navbar.Brand href='/' className='nav'>
 					<Link href='/'>
 						<img
-							src={prefix + '/bdlogo5.png'}
+							src={prefix + '/logo.jpg'}
 							alt='Lithops logo'
 							className={navStyle.brand}
 						/>
@@ -52,15 +52,15 @@ const Navigation = () => {
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='mr-auto'>
 						<Link href='/' passHref>
-							<Nav.Link>Home</Nav.Link>
+							<Nav.Link className={navStyle.navLink}>Home</Nav.Link>
 						</Link>
 						<Link className='navlink' href='/about' passHref>
-							<Nav.Link>About Us</Nav.Link>
+							<Nav.Link className={navStyle.navLink}>About Us</Nav.Link>
 						</Link>
 
-						<NavDropdown title='Our Work'>
+						<NavDropdown title='Our Work' className={navStyle.navLink}>
 							<NavDropdown.Item href='/howWeWork'>
-								<Link className='navlink' href='/howWeWork#HowWeWork' passHref>
+								<Link href='/howWeWork#HowWeWork' passHref>
 									<Nav.Link>How We Work</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
@@ -81,9 +81,12 @@ const Navigation = () => {
 						</NavDropdown>
 
 						<Link href='/projects' passHref>
-							<Nav.Link>Projects</Nav.Link>
+							<Nav.Link className={navStyle.navLink}>Projects</Nav.Link>
 						</Link>
-						<NavDropdown title='Media'>
+						<Link href='/gallery' passHref>
+							<Nav.Link className={navStyle.navLink}>Gallery</Nav.Link>
+						</Link>
+						{/* <NavDropdown title='Media'>
 							<NavDropdown.Item href='#gallery'>
 								<Link className='navlink' href='/gallery' passHref>
 									<Nav.Link>Gallery</Nav.Link>
@@ -94,9 +97,9 @@ const Navigation = () => {
 									<Nav.Link>News</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
-						</NavDropdown>
+						</NavDropdown> */}
 						<Link href='/contact' passHref>
-							<Nav.Link>Contact Us</Nav.Link>
+							<Nav.Link className={navStyle.navLink}>Contact Us</Nav.Link>
 						</Link>
 					</Nav>
 

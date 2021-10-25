@@ -14,10 +14,14 @@
  
 }
 
-a.social:hover {
-  opacity: 0.8;
-  transform: scale(0.98);
-  color: var(--bs-blue);
+/* .navLink{
+color: var(--bs-primary);
+} */
+
+a.social:hover, .navLink:hover {
+  opacity: 1.9;
+  transform: scale(.98);
+  color: var(--bs-secondary);
 }
 
 .topBox {
@@ -48,13 +52,16 @@ a.social:hover {
   top: 10%;
   margin-top: 0;
   min-height: 40px;
+
 }
 
 .brand {
   display: flex;
-  height: 10vh;
+  height: 11vh;
   padding-left: 65px;
   /* border: 2px solid black; */
+  box-sizing: border-box;
+  
 }
 
 #backtotop.visible {

@@ -4408,8 +4408,8 @@ fieldset:disabled .btn {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  padding: .5rem 2.5rem;
+  font-size: 1.5rem;
   color: #071F3B;
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
