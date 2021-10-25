@@ -67,7 +67,7 @@
 }
 
 .bgImage {
-  background: url("../public/Safeguard.jpg");
+  background: url("../public/security.jpg");
   filter: blur(0.1px);
   -webkit-filter: blur(0.1px);
 

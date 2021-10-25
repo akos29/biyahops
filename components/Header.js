@@ -19,9 +19,11 @@ const Header = () => {
 					/>
 					{/* 
           </ResponsiveEmbed> */}
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					<Carousel.Caption className={headerStyle.bgText}>
+						<h3 className={headerStyle.heading}>First slide label</h3>
+						<p className={headerStyle.text}>
+							Nulla vitae elit libero, a pharetra augue mollis interdum.
+						</p>
 					</Carousel.Caption>
 					{/* </Link> */}
 				</Carousel.Item>
@@ -29,13 +31,30 @@ const Header = () => {
 				<Carousel.Item interval={5000}>
 					{/* <Link href="/project/[id]" as={`/project/2`}> */}
 					<img
-						src={prefix + '/slide2.jpg'}
+						src={prefix + '/Internal-Wall-Painting.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
 					/>
-					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<Carousel.Caption className={headerStyle.bgText}>
+						<h3 className={headerStyle.heading}>First slide label</h3>
+						<p className={headerStyle.text}>
+							Nulla vitae elit libero, a pharetra augue mollis interdum.
+						</p>
+					</Carousel.Caption>
+					{/* </Link> */}
+				</Carousel.Item>
+				<Carousel.Item interval={5000}>
+					{/* <Link href="/project/[id]" as={`/project/2`}> */}
+					<img
+						src={prefix + '/volvo.jpg'}
+						alt='Smooth-Wheel-Compactor'
+						className={headerStyle.slide}
+					/>
+					<Carousel.Caption className={headerStyle.bgText}>
+						<h3 className={headerStyle.heading}>First slide label</h3>
+						<p className={headerStyle.text}>
+							Nulla vitae elit libero, a pharetra augue mollis interdum.
+						</p>
 					</Carousel.Caption>
 					{/* </Link> */}
 				</Carousel.Item>
@@ -47,10 +66,10 @@ const Header = () => {
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
 					/>
-					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>
-							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+					<Carousel.Caption className={headerStyle.bgText}>
+						<h3 className={headerStyle.heading}>First slide label</h3>
+						<p className={headerStyle.text}>
+							Nulla vitae elit libero, a pharetra augue mollis interdum.
 						</p>
 					</Carousel.Caption>
 					{/* </Link> */}
