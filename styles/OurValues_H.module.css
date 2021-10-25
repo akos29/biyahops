@@ -1,6 +1,13 @@
 .values {
     font-family: 'Autour One', cursive;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
 } 
 
+.valueDetail{
+    
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing : 1.5px;
+    line-height: 2.0em;
+}

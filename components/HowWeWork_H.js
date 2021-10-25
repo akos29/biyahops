@@ -1,5 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import workStyle from '../styles/HowWeWork.module.css';
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 
@@ -8,10 +9,12 @@ const howWeWork = () => {
 		<>
 			<div className='ip-5'>
 				<Row>
-					<Col sm={7}>
+					<h2 className='ip-5' style={{ textAlign: 'center' }}>
+						How We Work
+					</h2>
+					<Col sm={6}>
 						{' '}
-						<h1 className='ip-5'>How We Work</h1>
-						<p>
+						<p className={workStyle.text}>
 							Devoted to enhancing the road construction industry in Ethiopia by
 							providing the highest quality projects and services, utilizing
 							high-end technologies and approaches and working in partnership
@@ -21,10 +24,11 @@ const howWeWork = () => {
 							our employees and for the communities that we serve.
 						</p>
 					</Col>
-					<Col sm={5}>
+					<Col sm={6}>
 						{' '}
 						<img
-							src={prefix + '/slide1.jpg'}
+							className={workStyle.image}
+							src={prefix + '/Internal-Wall-Painting.jpg'}
 							alt='How we work'
 							/* width='300px'
 							height='500px' */
