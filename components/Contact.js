@@ -12,6 +12,8 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import { init } from 'emailjs-com';
 init('user_Id41zcfbM2Am99QJmXKSe');
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
+
 const Contact = () => {
 	const {
 		register,
@@ -186,6 +188,9 @@ const Contact = () => {
 								</form>
 							</div>
 							<ToastContainer />
+						</div>
+						<div className='col-6 ip-5'>
+							<img src={prefix + '/digital-world-map.jpg'} alt='' />
 						</div>
 					</div>
 				</div>

@@ -46,7 +46,9 @@ const Testimonial = () => {
 									a.
 								</p>
 								<footer
-									className={cx(testimonialStyle.quote, 'blockquote-footer ')}
+									className={cx(
+										/* testimonialStyle.quote, */ 'blockquote-footer '
+									)}
 								>
 									Mr. Dawit Adera{' '}
 									<cite title='Board Member, BD Lithops'>
