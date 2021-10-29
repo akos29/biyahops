@@ -80,8 +80,8 @@ const Navigation = () => {
 							</NavDropdown.Item>
 						</NavDropdown>
 
-						<Link href='/projects' passHref>
-							<Nav.Link className={navStyle.navLink}>Projects</Nav.Link>
+						<Link href='/services' passHref>
+							<Nav.Link className={navStyle.navLink}>Services</Nav.Link>
 						</Link>
 						<Link href='/gallery' passHref>
 							<Nav.Link className={navStyle.navLink}>Gallery</Nav.Link>

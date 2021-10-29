@@ -20,9 +20,9 @@ const Header = () => {
 					{/* 
           </ResponsiveEmbed> */}
 					<Carousel.Caption className={headerStyle.bgText}>
-						<h3 className={headerStyle.heading}>First slide label</h3>
+						<h3 className={headerStyle.heading}>Welcom to Lithops!</h3>
 						<p className={headerStyle.text}>
-							Nulla vitae elit libero, a pharetra augue mollis interdum.
+							Building your future! Building your roads.
 						</p>
 					</Carousel.Caption>
 					{/* </Link> */}
@@ -46,7 +46,7 @@ const Header = () => {
 				<Carousel.Item interval={5000}>
 					{/* <Link href="/project/[id]" as={`/project/2`}> */}
 					<img
-						src={prefix + '/volvo.jpg'}
+						src={prefix + '/Interior-Design.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
 					/>
@@ -62,7 +62,7 @@ const Header = () => {
 				<Carousel.Item>
 					{/* <Link href="/project/[id]" as={`/project/3`}> */}
 					<img
-						src={prefix + '/slide3.jpg'}
+						src={prefix + '/Granite-painting.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
 					/>

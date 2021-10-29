@@ -6,14 +6,37 @@ import Container from 'react-bootstrap/Container';
 import Building from '../components/Building_P';
 import Road from '../components/Road_P';
 import Others from '../components/Others_P';
+import { height } from 'dom-helpers';
 
-const projects = () => {
+const services = () => {
+	const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 	return (
 		<>
+			{/* <img
+				src={prefix + 'Interior-Design.jpg'}
+				alt=''
+				style={{ width: '100%', height: '75vh', objectFit: 'cover' }}
+			/> */}
+			<h1
+				style={{
+					textAlign: 'center',
+					backgroundImage: 'url(/Interior-Design.jpg)',
+					backgroundPosition: 'center',
+					display: 'flex',
+					alignContent: 'center',
+					justifyContent: 'space-around',
+					alignItems: 'center',
+					backgroundSize: 'cover',
+					backgroundRepeat: 'no-repeat',
+					width: '100vw',
+					height: '75vh',
+					filter: 'blur(5px)',
+				}}
+			>
+				Our Services
+			</h1>
 			<Container>
-				<h1 className='ip-5'>Our Projects</h1>
-
-				<Tab.Container
+				{/* <Tab.Container
 					id='list-group-tabs-example'
 					defaultActiveKey='#Building'
 				>
@@ -45,10 +68,10 @@ const projects = () => {
 							</Tab.Content>
 						</Col>
 					</Row>
-				</Tab.Container>
+				</Tab.Container> */}
 			</Container>
 		</>
 	);
 };
 
-export default projects;
+export default services;
