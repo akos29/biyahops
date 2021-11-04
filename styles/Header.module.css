@@ -1,23 +1,26 @@
 .slideContainer {
   height: 10vh;
-  margin: 0px;
-  padding: 0px;
+ /*  margin: 10%;
+  padding: 10px; */
+  align-items: center;
+  display: flex;
+  align-content: center;
   
 }
 
 .slide {
   position: relative;
-  height: 85vh;
-  width: 100%;
+  height: 65vh;
+  width: 90%;
   object-fit: cover;
   box-sizing: border-box;
-  
-
 transform: translate3d(0px, 0px, 0px);
 transform-origin: 415px 180px 0px;
 perspective: 4000px;
 opacity: 1;
-/* display: block; */
+display: flex;
+align-content: center;
+margin: 0 5%;
 }
 
 .bgText {

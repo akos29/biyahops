@@ -7,6 +7,7 @@ const Header = () => {
 
 	return (
 		<>
+			{/* <div className='slideContainer'> */}
 			<Carousel className={cx(headerStyle.slide)}>
 				<Carousel.Item interval={5000}>
 					{/* <Link href="/project/[id]" as={`/project/1`}> */}
@@ -15,12 +16,12 @@ const Header = () => {
 						src={prefix + '/slide1.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
-						style={{ left: 0 }}
+						/* style={{ alignContent: 'center'}}  */
 					/>
 					{/* 
           </ResponsiveEmbed> */}
 					<Carousel.Caption className={headerStyle.bgText}>
-						<h3 className={headerStyle.heading}>Welcom to Lithops!</h3>
+						<h3 className={headerStyle.heading}>Welcome to Lithops!</h3>
 						<p className={headerStyle.text}>
 							Building your future! Building your roads.
 						</p>
@@ -75,6 +76,7 @@ const Header = () => {
 					{/* </Link> */}
 				</Carousel.Item>
 			</Carousel>
+			{/* 	</div> */}
 		</>
 	);
 };

@@ -3,7 +3,8 @@ import Meta from '../components/Meta';
 import Testimonial from '../components/Testimonial';
 import ArticleList from '../components/ArticleList';
 import Header from '../components/Header';
-import News from '../components/News';
+
+import Services from '../components/Services';
 
 export default function Home({ projects }) {
 	return (
@@ -11,9 +12,9 @@ export default function Home({ projects }) {
 			<Meta title='Welcome to Lithops' />
 			<Header />
 			<div className='container' /* style={{ backgroundColor: '#f8f9fa' }} */>
-				<h2 className='ip-5'>Latest News </h2>
+				<h2 className='ip-5'>Our Services </h2>
 
-				<News projects={projects} />
+				<Services />
 			</div>
 			<Testimonial />
 			<div className='container'>

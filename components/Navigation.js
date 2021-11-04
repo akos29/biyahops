@@ -79,10 +79,31 @@ const Navigation = () => {
 								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
-
-						<Link href='/services' passHref>
+						<NavDropdown title='Services'>
+							<NavDropdown.Item href='/services/building'>
+								<Link className='navlink' href='/building' passHref>
+									<Nav.Link>Building</Nav.Link>
+								</Link>
+							</NavDropdown.Item>
+							<NavDropdown.Item href='/service/road'>
+								<Link className='navlink' href='/service/road' passHref>
+									<Nav.Link>Road</Nav.Link>
+								</Link>
+							</NavDropdown.Item>
+							<NavDropdown.Item href='/service/landscape'>
+								<Link className='navlink' href='/service/landscape' passHref>
+									<Nav.Link>Landscape</Nav.Link>
+								</Link>
+							</NavDropdown.Item>
+							<NavDropdown.Item href='/service/finishing'>
+								<Link className='navlink' href='/service/finishing' passHref>
+									<Nav.Link>Finishing works</Nav.Link>
+								</Link>
+							</NavDropdown.Item>
+						</NavDropdown>
+						{/* <Link href='/services' passHref>
 							<Nav.Link className={navStyle.navLink}>Services</Nav.Link>
-						</Link>
+						</Link> */}
 						<Link href='/gallery' passHref>
 							<Nav.Link className={navStyle.navLink}>Gallery</Nav.Link>
 						</Link>

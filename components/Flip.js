@@ -3,19 +3,16 @@ import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
 import projectStyle from '../styles/Project.module.css';
 
-const NewsItem = ({ project }) => {
-	const cx = (...classNames) => classNames.join(' ');
-	const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
-
+export default function Flip() {
 	return (
 		<>
-			<Col md={4}>
+			<Col md={3}>
 				<div className={cx(projectStyle.flipBox, 'ip-1')}>
 					<div className={cx(projectStyle.flipBoxInner, 'center')}>
 						<div
 							className={cx(projectStyle.flipBoxFront, projectStyle.bgImage)}
 							style={{
-								background: `url('/security.jpg')`,
+								background: `url(${prefix}+'/security.jpg')`,
 								filter: 'blur(0.1px)',
 								WebkitFilter: 'blur(0.1px)',
 								height: '100%',
@@ -41,6 +38,4 @@ const NewsItem = ({ project }) => {
 			</Col>
 		</>
 	);
-};
-
-export default NewsItem;
+}
