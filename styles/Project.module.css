@@ -107,11 +107,11 @@
 }
 
 .road{
-  background: url("../public/road.jpg");
+  background: url("../public/road_s.jpg");
 }
 .landscape{
-  background: url("../public/security.jpg");
+  background: url("../public/landscape.jpg");
 }
 .finishing{
-  background: url("../public/security.jpg");
+  background: url("../public/finishing.jpg");
 }

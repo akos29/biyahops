@@ -51,9 +51,6 @@ const Services = () => {
 										projectStyle.bgImage,
 										projectStyle.road
 									)}
-									style={{
-										backgroundSize: 'cover',
-									}}
 								>
 									<h4 className={projectStyle.bgText}>Road Construction</h4>
 								</div>
@@ -79,17 +76,9 @@ const Services = () => {
 								<div
 									className={cx(
 										projectStyle.flipBoxFront,
-										projectStyle.bgImage
+										projectStyle.bgImage,
+										projectStyle.landscape
 									)}
-									style={{
-										background: `url(${prefix}+'/security.jpg')`,
-										filter: 'blur(0.1px)',
-										WebkitFilter: 'blur(0.1px)',
-										height: '100%',
-										backgroundPosition: 'center',
-										backgroundRepeat: 'no-repeat',
-										backgroundSize: 'cover',
-									}}
 								>
 									<h4 className={projectStyle.bgText}>Landscape Design</h4>
 								</div>
@@ -115,17 +104,9 @@ const Services = () => {
 								<div
 									className={cx(
 										projectStyle.flipBoxFront,
-										projectStyle.bgImage
+										projectStyle.bgImage,
+										projectStyle.finishing
 									)}
-									style={{
-										background: `url(${prefix}+'/security.jpg')`,
-										filter: 'blur(0.1px)',
-										WebkitFilter: 'blur(0.1px)',
-										height: '100%',
-										backgroundPosition: 'center',
-										backgroundRepeat: 'no-repeat',
-										backgroundSize: 'cover',
-									}}
 								>
 									<h4 className={projectStyle.bgText}>Finishing Works</h4>
 								</div>
