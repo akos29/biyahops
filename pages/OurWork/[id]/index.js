@@ -1,4 +1,4 @@
-import Building_P from '../../../components/Building_P';
+import OurValues_H from '../../../components/OurValues_H';
 import Road_P from '../../../components/Road_P';
 import Finishing from '../../../components/Finishing';
 import Landscape from '../../../components/Landscape';
@@ -7,10 +7,10 @@ import { useRouter } from 'next/router';
 export default function index() {
 	const router = useRouter();
 	const { id } = router.query;
-	if (id === 'building') {
+	if (id === 'OurValues') {
 		return (
 			<>
-				<Building_P />
+				<OurValues_H />
 			</>
 		);
 	} else if (id === 'road') {

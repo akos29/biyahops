@@ -63,7 +63,7 @@ const Header = () => {
 				<Carousel.Item>
 					{/* <Link href="/project/[id]" as={`/project/3`}> */}
 					<img
-						src={prefix + '/Granite-painting.jpg'}
+						src={prefix + '/slide4.jpg'}
 						alt='Smooth-Wheel-Compactor'
 						className={headerStyle.slide}
 					/>

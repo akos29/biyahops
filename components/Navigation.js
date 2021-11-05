@@ -60,42 +60,38 @@ const Navigation = () => {
 
 						<NavDropdown title='Our Work' className={navStyle.navLink}>
 							<NavDropdown.Item href='/howWeWork'>
-								<Link href='/howWeWork#HowWeWork' passHref>
+								<Link href='/OurWork/howWeWork' passHref>
 									<Nav.Link>How We Work</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item href='#howwework'>
-								<Link
-									className='navlink'
-									href='/howWeWork#WhereWeWork'
-									passHref
-								>
+								<Link className='navlink' href='/OurWork/Where' passHref>
 									<Nav.Link>Where We Work</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
-							<NavDropdown.Item href='#howwework'>
-								<Link className='navlink' href='/howWeWork#OurValues' passHref>
+							<NavDropdown.Item>
+								<Link className='navlink' href='/OurWork/OurValues' passHref>
 									<Nav.Link>Our Values</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown title='Services'>
-							<NavDropdown.Item href='/services/building'>
-								<Link className='navlink' href='/building' passHref>
+							<NavDropdown.Item>
+								<Link className='navlink' href='/service/building' passHref>
 									<Nav.Link>Building</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
-							<NavDropdown.Item href='/service/road'>
+							<NavDropdown.Item>
 								<Link className='navlink' href='/service/road' passHref>
 									<Nav.Link>Road</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
-							<NavDropdown.Item href='/service/landscape'>
+							<NavDropdown.Item>
 								<Link className='navlink' href='/service/landscape' passHref>
 									<Nav.Link>Landscape</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
-							<NavDropdown.Item href='/service/finishing'>
+							<NavDropdown.Item>
 								<Link className='navlink' href='/service/finishing' passHref>
 									<Nav.Link>Finishing works</Nav.Link>
 								</Link>

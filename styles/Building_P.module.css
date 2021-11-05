@@ -1,0 +1,29 @@
+p.text{
+    
+    text-align: justify;
+    font-variant: small-caps;
+    letter-spacing : 1.5px;
+    line-height: 2.0em;
+}
+
+img.image{
+   display: flex;
+   justify-content: center;
+   position: relative;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+   /*  object-fit: scale-down; */
+}
+
+img.image:hover{
+  -webkit-border-radius: 5em;
+	-moz-border-radius: 5em;
+	border-radius: 5em;
+} 
