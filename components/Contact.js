@@ -1,9 +1,5 @@
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-import Location from './Location';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
@@ -66,10 +62,12 @@ const Contact = () => {
 		<>
 			<Container
 				fluid
-				style={{ background: 'var(--bs-secondary)', height: '307px' }}
+				style={{ background: 'var(--bs-gray-200)', height: '30vh' }}
 			>
 				<Container>
-					<h1 className='ip-5'>Welcome</h1>
+					<h1 className='ip-5' style={{ textAlign: 'center' }}>
+						Welcome
+					</h1>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 						eveniet laborum ipsam incidunt. Tenetur accusamus eligendi nisi
@@ -83,7 +81,14 @@ const Contact = () => {
 				<div className='container'>
 					<div className='row ip-5'>
 						<div className='col-6 text-center ip-3'>
-							<div className='contactForm'>
+							<div
+								className='contactForm'
+								style={{
+									/* backgroundImage: `url('greek-vase.png')`, */
+									backgroundColor: 'var(--bs-gray-200)',
+									padding: '5%',
+								}}
+							>
 								<form
 									id='contact-form ip-3'
 									onSubmit={handleSubmit(onSubmit)}

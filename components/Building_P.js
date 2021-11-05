@@ -28,7 +28,7 @@ const Building_P = () => {
 						{' '}
 						<img
 							className={buildingStyle.image}
-							src={prefix + '/Internal-Wall-Painting.jpg'}
+							src={prefix + '/slide3.jpg'}
 							alt='How we work'
 							height='324px'
 							/* width='300px'
@@ -41,7 +41,7 @@ const Building_P = () => {
 						{' '}
 						<img
 							className={buildingStyle.image}
-							src={prefix + '/roadConstruction.jfif'}
+							src={prefix + '/slide3.jpg'}
 							alt='How we work'
 							height='324px'
 							/* width='300px'

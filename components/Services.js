@@ -25,7 +25,7 @@ const Services = () => {
 								>
 									<h4 className={projectStyle.bgText}>Building Construction</h4>
 								</div>
-								<Link href='/Services/building' as={`/project/building`}>
+								<Link href='/service/building' as={`/service/building`}>
 									<div className={cx(projectStyle.flipBoxBack)}>
 										<h4 className='ip-5'>Building Construction</h4>
 										<p className={(projectStyle.text, 'ip-1')}>
@@ -54,7 +54,7 @@ const Services = () => {
 								>
 									<h4 className={projectStyle.bgText}>Road Construction</h4>
 								</div>
-								<Link href='/Services/Road' as={`/project/Road`}>
+								<Link href='/service/road' as={`/service/road`}>
 									<div className={cx(projectStyle.flipBoxBack)}>
 										<h4 className='ip-5'>Road Construction</h4>
 										<p className={(projectStyle.text, 'ip-1')}>
@@ -82,7 +82,7 @@ const Services = () => {
 								>
 									<h4 className={projectStyle.bgText}>Landscape Design</h4>
 								</div>
-								<Link href='/services/Landscape' as={`/service/Landscape`}>
+								<Link href='/service/landscape' as={`/service/landscape`}>
 									<div className={cx(projectStyle.flipBoxBack)}>
 										<h4 className='ip-5'>Landscape Design</h4>
 										<p className={(projectStyle.text, 'ip-1')}>
@@ -110,7 +110,7 @@ const Services = () => {
 								>
 									<h4 className={projectStyle.bgText}>Finishing Works</h4>
 								</div>
-								<Link href='/Services/Finishing' as={`/project/Finishing`}>
+								<Link href='/service/finishing' as={`/service/finishing`}>
 									<div className={cx(projectStyle.flipBoxBack)}>
 										<h4 className='ip-5'>Finishing Works</h4>
 										<p className={(projectStyle.text, 'ip-1')}>

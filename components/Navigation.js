@@ -39,7 +39,7 @@ const Navigation = () => {
 				sticky='top'
 				className={navStyle.myNav}
 			>
-				<Navbar.Brand href='/' className='nav'>
+				<Navbar.Brand href='/'>
 					<Link href='/'>
 						<img
 							src={prefix + '/logo.jpg'}
@@ -60,7 +60,7 @@ const Navigation = () => {
 
 						<NavDropdown title='Our Work' className={navStyle.navLink}>
 							<NavDropdown.Item href='/howWeWork'>
-								<Link href='/OurWork/howWeWork' passHref>
+								<Link href='/howWeWork#HowWeWork' passHref>
 									<Nav.Link>How We Work</Nav.Link>
 								</Link>
 							</NavDropdown.Item>

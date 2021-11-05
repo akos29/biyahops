@@ -57,10 +57,13 @@ a.social:hover, .navLink:hover {
 
 .brand {
   display: flex;
-  height: 11vh;
-  padding-left: 65px;
+  height: 17vh;
+  padding-left: 0px;
   /* border: 2px solid black; */
   box-sizing: border-box;
+  top: 0px;
+  position: absolute;
+
   
 }
 

@@ -13,7 +13,9 @@ const gallery = () => {
 	return (
 		<>
 			<Container className='ip-5'>
-				<h1>Gallery</h1>
+				<h1 className='ip-5' style={{ textAlign: 'center' }}>
+					Gallery
+				</h1>
 				<Row className='justify-content-md-center g-5'>
 					<Col md={3}>
 						<div className={cx(projectStyle.flipBox, 'ip-1')}>
@@ -128,14 +130,14 @@ const gallery = () => {
 					</Col>
 				</Row>
 			</Container>
-			<div style={{ background: '#f8f9fa' }}>
+			<div className='ip-5' style={{ textAlign: 'center' }}>
 				<Row className='ip-5'>
 					<h2>Our Activities</h2>
 					<Col sm={3}>
 						{' '}
 						<img
 							className={workStyle.image}
-							src={prefix + '/roadConstruction.jfif'}
+							src={prefix + '/road.jpg'}
 							alt='How we work'
 							/* width='300px'
 							height='500px' */
@@ -145,7 +147,7 @@ const gallery = () => {
 						{' '}
 						<img
 							className={workStyle.image}
-							src={prefix + '/volvo.jpg'}
+							src={prefix + '/slide2.jpg'}
 							alt='How we work'
 							/* width='300px'
 							height='500px' */
@@ -155,7 +157,7 @@ const gallery = () => {
 						{' '}
 						<img
 							className={workStyle.image}
-							src={prefix + '/slide3.jpg'}
+							src={prefix + '/slide1.jpg'}
 							alt='How we work'
 							/* width='300px'
 							height='500px' */
@@ -207,7 +209,7 @@ const gallery = () => {
 						{' '}
 						<img
 							className={workStyle.image}
-							src={prefix + '/Internal-Wall-Painting.jpg'}
+							src={prefix + '/landscape2.jpg'}
 							alt='How we work'
 							/* width='300px'
 							height='500px' */

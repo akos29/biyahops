@@ -8,10 +8,16 @@ import HowWeWork_H from '../components/HowWeWork_H';
 import OurValues from '../components/OurValues_H';
 
 import WhereWeOperate_A from '../components/WhereWeOperate_A';
+import { useRouter } from 'next/router';
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 
 const howWeWork = () => {
+	const router = useRouter();
+	const { id } = router.query;
+	/* if(id==='HowWeWork') */
+	console.log(id);
+
 	return (
 		<>
 			<div className='ip-5'>
@@ -21,7 +27,7 @@ const howWeWork = () => {
 				>
 					<Row>
 						<Col sm={3}>
-							<ListGroup>
+							<ListGroup style={{ paddingTop: '3.5rem' }}>
 								<ListGroup.Item action href='#HowWeWork'>
 									How We Work
 								</ListGroup.Item>
