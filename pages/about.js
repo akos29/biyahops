@@ -19,12 +19,15 @@ const about = () => {
 				title='About BD Lithops construction'
 				keyword='Where bdlithops work, bd lithops values, history, teamwork'
 			/>
-			<div className='bdw-14 ip-5 align-items-center'>
+			<div className='ip-5'>
 				{/* 	<h1 className='ip-5'>About</h1> */}
 
-				<Tab.Container defaultActiveKey='#OurValues'>
+				<Tab.Container
+					defaultActiveKey='#TeamMembers'
+					style={{ paddingTop: '3.5rem' }}
+				>
 					<Row>
-						<Col sm={4}>
+						<Col sm={4} style={{ paddingTop: '3.5rem' }}>
 							{/* <div className={aboutStyle.optionBox}> */}
 							<ListGroup id='tclist'>
 								<ListGroup.Item action href='#WhereWeWork'>
@@ -51,6 +54,10 @@ const about = () => {
 									data-bs-target='#tclist'
 									data-bs-spy='scroll'
 									tabIndex='0'
+									style={{
+										backgroundImage: `url('chevron.png')`,
+										paddingTop: '1.5rem',
+									}}
 								>
 									<Tab.Pane eventKey='#WhereWeWork'>
 										<div className={aboutStyle.panelContent}>

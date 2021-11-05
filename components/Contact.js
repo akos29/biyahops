@@ -62,7 +62,7 @@ const Contact = () => {
 		<>
 			<Container
 				fluid
-				style={{ background: 'var(--bs-gray-200)', height: '30vh' }}
+				style={{ background: 'var(--bs-gray-100)', height: '30vh' }}
 			>
 				<Container>
 					<h1 className='ip-5' style={{ textAlign: 'center' }}>
@@ -85,7 +85,7 @@ const Contact = () => {
 								className='contactForm'
 								style={{
 									/* backgroundImage: `url('greek-vase.png')`, */
-									backgroundColor: 'var(--bs-gray-200)',
+									backgroundColor: 'var(--bs-gray-100)',
 									padding: '5%',
 								}}
 							>

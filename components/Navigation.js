@@ -65,7 +65,7 @@ const Navigation = () => {
 								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item href='#howwework'>
-								<Link className='navlink' href='/OurWork/Where' passHref>
+								<Link className='navlink' href='/howWeWork#Where' passHref>
 									<Nav.Link>Where We Work</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
