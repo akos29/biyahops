@@ -3,11 +3,11 @@ import Button from 'react-bootstrap/Button';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
 import contactStyle from '../styles/Contact.module.css';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 import { init } from 'emailjs-com';
-import context from 'react-bootstrap/esm/AccordionContext';
+
 init('user_Id41zcfbM2Am99QJmXKSe');
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
