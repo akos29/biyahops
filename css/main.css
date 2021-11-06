@@ -4571,6 +4571,8 @@ fieldset:disabled .btn {
   padding-left: 0;
 }
 
+
+
 .navbar-nav .dropdown-menu {
   position: static;
 }
@@ -4706,6 +4708,7 @@ fieldset:disabled .btn {
     padding: 0;
     overflow-y: visible;
   }
+  
 }
 
 @media (min-width: 768px) {
