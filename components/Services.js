@@ -109,11 +109,11 @@ const Services = () => {
 										projectStyle.landscape
 									)}
 								>
-									<h4 className={projectStyle.bgText}>Landscape Design</h4>
+									<h4 className={projectStyle.bgText}>Landscaping</h4>
 								</div>
 								<Link href='/service/landscape' as={`/service/landscape`}>
 									<div className={cx(projectStyle.flipBoxBack)}>
-										<h4 className='ip-5'>Landscape Design</h4>
+										<h4 className='ip-5'>Landscaping</h4>
 										<p className={(projectStyle.text, 'ip-1')}>
 											Cillum laboris deserunt voluptate et deserunt sit cillum
 											aliquip consequat proident aute voluptate veniam. Nisi

@@ -77,23 +77,24 @@ const Navigation = () => {
 						</NavDropdown>
 						<NavDropdown title='Services'>
 							<NavDropdown.Item>
-								<Link className='navlink' href='/service/building' passHref>
-									<Nav.Link>Building</Nav.Link>
-								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
 								<Link className='navlink' href='/service/road' passHref>
 									<Nav.Link>Road</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<Link className='navlink' href='/service/landscape' passHref>
-									<Nav.Link>Landscape</Nav.Link>
+								<Link className='navlink' href='/service/finishing' passHref>
+									<Nav.Link>Finishing works</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<Link className='navlink' href='/service/finishing' passHref>
-									<Nav.Link>Finishing works</Nav.Link>
+								<Link className='navlink' href='/service/building' passHref>
+									<Nav.Link>Building</Nav.Link>
+								</Link>
+							</NavDropdown.Item>
+
+							<NavDropdown.Item>
+								<Link className='navlink' href='/service/landscape' passHref>
+									<Nav.Link>Landscaping</Nav.Link>
 								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
