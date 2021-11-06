@@ -16,7 +16,7 @@ const TeamMembers_A = () => {
 						<img
 							src={prefix + '/belay.jpg'}
 							alt=''
-							height='150px'
+							height='150'
 							style={{
 								borderRadius: '25px',
 								filter: 'brightness(90%)',
