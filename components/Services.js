@@ -13,33 +13,6 @@ const Services = () => {
 		<>
 			<Container>
 				<Row className='justify-content-md-center g-5'>
-					<Col md={3}>
-						<div className={cx(projectStyle.flipBox, 'ip-1')}>
-							<div className={cx(projectStyle.flipBoxInner, 'center')}>
-								<div
-									className={cx(
-										projectStyle.flipBoxFront,
-										projectStyle.bgImage,
-										projectStyle.bld
-									)}
-								>
-									<h4 className={projectStyle.bgText}>Building Construction</h4>
-								</div>
-								<Link href='/service/building' as={`/service/building`}>
-									<div className={cx(projectStyle.flipBoxBack)}>
-										<h4 className='ip-5'>Building Construction</h4>
-										<p className={(projectStyle.text, 'ip-1')}>
-											Cillum laboris deserunt voluptate et deserunt sit cillum
-											aliquip consequat proident aute voluptate veniam. Nisi
-											culpa occaecat adipisicing laboris deserunt aute .
-										</p>
-										<button className='btn btn-danger ip-2'>Read More</button>
-									</div>
-								</Link>
-							</div>
-						</div>
-					</Col>
-
 					{/* Road */}
 
 					<Col md={3}>
@@ -68,6 +41,62 @@ const Services = () => {
 						</div>
 					</Col>
 
+					{/* Finishing */}
+					<Col md={3}>
+						<div className={cx(projectStyle.flipBox, 'ip-1')}>
+							<div className={cx(projectStyle.flipBoxInner, 'center')}>
+								<div
+									className={cx(
+										projectStyle.flipBoxFront,
+										projectStyle.bgImage,
+										projectStyle.finishing
+									)}
+								>
+									<h4 className={projectStyle.bgText}>Finishing Works</h4>
+								</div>
+								<Link href='/service/finishing' as={`/service/finishing`}>
+									<div className={cx(projectStyle.flipBoxBack)}>
+										<h4 className='ip-5'>Finishing Works</h4>
+										<p className={(projectStyle.text, 'ip-1')}>
+											Cillum laboris deserunt voluptate et deserunt sit cillum
+											aliquip consequat proident aute voluptate veniam. Nisi
+											culpa occaecat adipisicing laboris deserunt aute .
+										</p>
+										<button className='btn btn-danger ip-2'>Read More</button>
+									</div>
+								</Link>
+							</div>
+						</div>
+					</Col>
+
+					{/* Building */}
+					<Col md={3}>
+						<div className={cx(projectStyle.flipBox, 'ip-1')}>
+							<div className={cx(projectStyle.flipBoxInner, 'center')}>
+								<div
+									className={cx(
+										projectStyle.flipBoxFront,
+										projectStyle.bgImage,
+										projectStyle.bld
+									)}
+								>
+									<h4 className={projectStyle.bgText}>Building Construction</h4>
+								</div>
+								<Link href='/service/building' as={`/service/building`}>
+									<div className={cx(projectStyle.flipBoxBack)}>
+										<h4 className='ip-5'>Building Construction</h4>
+										<p className={(projectStyle.text, 'ip-1')}>
+											Cillum laboris deserunt voluptate et deserunt sit cillum
+											aliquip consequat proident aute voluptate veniam. Nisi
+											culpa occaecat adipisicing laboris deserunt aute .
+										</p>
+										<button className='btn btn-danger ip-2'>Read More</button>
+									</div>
+								</Link>
+							</div>
+						</div>
+					</Col>
+
 					{/*Landscape   */}
 
 					<Col md={3}>
@@ -85,34 +114,6 @@ const Services = () => {
 								<Link href='/service/landscape' as={`/service/landscape`}>
 									<div className={cx(projectStyle.flipBoxBack)}>
 										<h4 className='ip-5'>Landscape Design</h4>
-										<p className={(projectStyle.text, 'ip-1')}>
-											Cillum laboris deserunt voluptate et deserunt sit cillum
-											aliquip consequat proident aute voluptate veniam. Nisi
-											culpa occaecat adipisicing laboris deserunt aute .
-										</p>
-										<button className='btn btn-danger ip-2'>Read More</button>
-									</div>
-								</Link>
-							</div>
-						</div>
-					</Col>
-
-					{/* Finishing */}
-					<Col md={3}>
-						<div className={cx(projectStyle.flipBox, 'ip-1')}>
-							<div className={cx(projectStyle.flipBoxInner, 'center')}>
-								<div
-									className={cx(
-										projectStyle.flipBoxFront,
-										projectStyle.bgImage,
-										projectStyle.finishing
-									)}
-								>
-									<h4 className={projectStyle.bgText}>Finishing Works</h4>
-								</div>
-								<Link href='/service/finishing' as={`/service/finishing`}>
-									<div className={cx(projectStyle.flipBoxBack)}>
-										<h4 className='ip-5'>Finishing Works</h4>
 										<p className={(projectStyle.text, 'ip-1')}>
 											Cillum laboris deserunt voluptate et deserunt sit cillum
 											aliquip consequat proident aute voluptate veniam. Nisi
