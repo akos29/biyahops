@@ -1,0 +1,19 @@
+.header{
+    color: var(--bs-secondary);
+    text-align: 'center'
+    }
+    
+.text{
+    color: var(--bs-blue);
+}
+
+.container{
+    background: var(--bs-primary);
+     height: '30vh'
+}
+
+.contactForm{
+    /* backgroundImage: `url('greek-vase.png')`, */
+    background-color: var(--bs-gray-100);
+    padding: '5%';
+}

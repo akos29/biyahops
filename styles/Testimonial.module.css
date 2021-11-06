@@ -1,5 +1,14 @@
 .quote {
     font-family: 'Shadows Into Light', cursive;
     font-size: 1.1rem;
+    color: var(--bs-blue);
 } 
 
+.header{
+color: var(--bs-secondary);
+
+}
+
+.text{
+    color: var(--bs-blue);
+}

@@ -4,13 +4,17 @@ import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import contactStyle from '../styles/Contact.module.css';
 
 import { init } from 'emailjs-com';
+import context from 'react-bootstrap/esm/AccordionContext';
 init('user_Id41zcfbM2Am99QJmXKSe');
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ' ';
 
 const Contact = () => {
+	const cx = (...classNames) => classNames.join(' ');
+
 	const {
 		register,
 		handleSubmit,
@@ -60,15 +64,10 @@ const Contact = () => {
 
 	return (
 		<>
-			<Container
-				fluid
-				style={{ background: 'var(--bs-gray-100)', height: '30vh' }}
-			>
+			<Container fluid className={contactStyle.container}>
 				<Container>
-					<h1 className='ip-5' style={{ textAlign: 'center' }}>
-						Welcome
-					</h1>
-					<p>
+					<h1 className={cx(contactStyle.header, 'ip-5')}>Welcome</h1>
+					<p className={cx(contactStyle.text, 'ip-5')}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
 						eveniet laborum ipsam incidunt. Tenetur accusamus eligendi nisi
 						dignissimos esse rerum. Omnis sapiente hic illo et quo quis, quidem
@@ -81,14 +80,7 @@ const Contact = () => {
 				<div className='container'>
 					<div className='row ip-5'>
 						<div className='col-6 text-center ip-3'>
-							<div
-								className='contactForm'
-								style={{
-									/* backgroundImage: `url('greek-vase.png')`, */
-									backgroundColor: 'var(--bs-gray-100)',
-									padding: '5%',
-								}}
-							>
+							<div className={cx(contactStyle.contactForm)}>
 								<form
 									id='contact-form ip-3'
 									onSubmit={handleSubmit(onSubmit)}

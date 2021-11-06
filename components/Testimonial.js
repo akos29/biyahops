@@ -12,10 +12,10 @@ const Testimonial = () => {
 		<>
 			<Container
 				fluid
-				style={{ background: 'var(--bs-secondary)', minHeight: '307px' }}
+				style={{ background: 'var(--bs-primary)', minHeight: '207px' }}
 			>
 				<Container>
-					<h2 className='ip-3'>Testimonials</h2>
+					<h2 className={cx(testimonialStyle.header, 'ip-3')}>Testimonials</h2>
 					<Row>
 						<Col md={6}>
 							<blockquote className='blockquote'>
