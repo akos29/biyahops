@@ -63,6 +63,7 @@ a.social:hover, .navLink:hover {
   box-sizing: border-box;
   top: 0px;
   position: absolute;
+  border-radius:0 5px 5px 5px;
 
   
 }

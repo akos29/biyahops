@@ -1,6 +1,5 @@
 import headerStyle from '../styles/Header.module.css';
 import Carousel from 'react-bootstrap/Carousel';
-import buildingStyle from '../styles/Building_P.module.css';
 
 const Header = () => {
 	const cx = (...classNames) => classNames.join(' ');
@@ -9,10 +8,7 @@ const Header = () => {
 	return (
 		<>
 			{/* <div className='slideContainer'> */}
-			<Carousel
-				className={cx(headerStyle.slide)}
-				className={buildingStyle.shadowContainer}
-			>
+			<Carousel className={cx(headerStyle.slideShadow)}>
 				<Carousel.Item interval={5000}>
 					{/* <Link href="/project/[id]" as={`/project/1`}> */}
 					{/* <ResponsiveEmbed aspectRatio="16by9"> */}

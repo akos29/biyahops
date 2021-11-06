@@ -14,13 +14,16 @@
   width: 90%;
   object-fit: cover;
   box-sizing: border-box;
-transform: translate3d(0px, 0px, 0px);
-transform-origin: 415px 180px 0px;
-perspective: 4000px;
-opacity: 1;
-display: flex;
-align-content: center;
-margin: 0 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+   
+
+}
+
+.slideShadow{
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .bgText {
