@@ -11,7 +11,7 @@ export default function Finishing() {
 					<h2 className='ip-5' style={{ textAlign: 'center' }}>
 						Our Finishing Works
 					</h2>
-					<Col sm={6}>
+					<Col sm={6} className={buildingStyle.shadowContainer}>
 						{' '}
 						<p className={buildingStyle.text}>
 							Devoted to enhancing the road construction industry in Ethiopia by
@@ -47,7 +47,7 @@ export default function Finishing() {
 							height='500px' */
 						/>
 					</Col>
-					<Col sm={6}>
+					<Col sm={6} className={buildingStyle.shadowContainer}>
 						{' '}
 						<p className={buildingStyle.text}>
 							Devoted to enhancing the road construction industry in Ethiopia by

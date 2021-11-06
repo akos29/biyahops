@@ -4,7 +4,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Tab from 'react-bootstrap/Tab';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 import WhereWeOperate_A from '../components/WhereWeOperate_A';
 import OurValues_H from '../components/OurValues_H';
 import OurHistory_A from '../components/OurHistory_A';
@@ -55,7 +54,7 @@ const about = () => {
 									data-bs-spy='scroll'
 									tabIndex='0'
 									style={{
-										backgroundImage: `url('chevron.png')`,
+										/* backgroundImage: `url('chevron.png')`, */
 										paddingTop: '1.5rem',
 									}}
 								>

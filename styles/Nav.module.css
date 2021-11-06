@@ -57,7 +57,7 @@ a.social:hover, .navLink:hover {
 
 .brand {
   display: flex;
-  height: 91px;
+  height: 120%;
   padding-left: 0px;
   /* border: 2px solid black; */
   box-sizing: border-box;

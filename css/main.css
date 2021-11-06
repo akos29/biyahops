@@ -4793,7 +4793,7 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-            margin-left: 199px;
+            padding-left: 15%;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;

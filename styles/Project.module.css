@@ -108,10 +108,23 @@
 
 .road{
   background: url("../public/road_s.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .landscape{
   background: url("../public/landscape.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .finishing{
   background: url("../public/finishing.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

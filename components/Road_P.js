@@ -11,7 +11,7 @@ const Road_P = () => {
 					<h2 className='ip-5' style={{ textAlign: 'center' }}>
 						Our Road Constructions
 					</h2>
-					<Col sm={6}>
+					<Col sm={6} className={buildingStyle.shadowContainer}>
 						{' '}
 						<p className={buildingStyle.text}>
 							Looking for earthmoving plant hire services in Sydney, Brisbane or
