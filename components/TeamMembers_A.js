@@ -14,7 +14,7 @@ const TeamMembers_A = () => {
 				<Row>
 					<Col md={6} className='ip-5'>
 						<img
-							src={prefix + '/any.jfif'}
+							src={prefix + '/belay.jpg'}
 							alt=''
 							height='150px'
 							style={{
