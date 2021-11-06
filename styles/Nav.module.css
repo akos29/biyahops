@@ -112,6 +112,26 @@ a.social:hover, .navLink:hover {
   background-position: 0 100%;
 }
 
+@media (max-width: 992px) {
+  .brand {
+    display: flex;
+    height: 50px;
+    padding-left: 0px;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    border-radius:25px;
+    
+  }
+  .myNav {
+    width: 100%;
+    display: flex;
+    font-size: .80rem;
+    font-family: 'Autour One', cursive;
+    }
+}
 
 @media (max-width: 768px) {
   .myNav {
@@ -127,10 +147,4 @@ a.social:hover, .navLink:hover {
       
     }
 
-    .navbar-nav .nav-link {
-      padding-right: 10%;
-      padding-left: 10%;
-      position: relative;
-      left: 10%;
-  }
 }

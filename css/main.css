@@ -4527,6 +4527,7 @@ fieldset:disabled .btn {
           justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+ 
 }
 
 .navbar > .container,
@@ -4561,9 +4562,12 @@ fieldset:disabled .btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 0;
+  
+  padding-right:0%;
   margin-bottom: 0;
   list-style: none;
+  margin-left: 10%;
+  
 }
 
 .navbar-nav .nav-link {
@@ -4796,7 +4800,8 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-            padding-left: 15%;
+            padding-left: 5%;
+            font-size: 20px;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
