@@ -9,12 +9,14 @@ const ArticleItem = ({ project }) => {
 			<Link href='/project/[id]' as={`/project/${project.id}`}>
 				<Card className={articleStyle.card}>
 					<Card.Body>
-						<h3> {project.title.rendered}</h3>
+						<h3> {project.title}</h3> {/* rendered */}
 						{/* <Card.Text> */}
 						<div
 							className='ip-0'
-							dangerouslySetInnerHTML={{ __html: project.content.rendered }}
-						></div>
+							/* dangerouslySetInnerHTML={{ __html: project.content.rendered }} */
+						>
+							{project.excerpt}
+						</div>
 						{/* </Card.Text> */}
 					</Card.Body>
 				</Card>

@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import contactStyle from '../styles/Contact.module.css';
 import 'react-toastify/dist/ReactToastify.min.css';
+import { Row, Col } from 'react-bootstrap';
 
 import { init } from 'emailjs-com';
 
@@ -78,8 +79,8 @@ const Contact = () => {
 
 			<div className='ContactForm'>
 				<div className='container'>
-					<div className='row ip-5'>
-						<div className='col-6 text-center ip-3'>
+					<Row className='ip-5'>
+						<Col className={cx(contactStyle.contactForm, 'text-center ip-3')}>
 							<div className={cx(contactStyle.contactForm)}>
 								<form
 									id='contact-form ip-3'
@@ -87,49 +88,49 @@ const Contact = () => {
 									noValidate
 								>
 									{/* Row 1 of form */}
-									<div className='row formRow ip-5'>
-										<div className='col-6 '>
-											<input
-												type='text'
-												name='name'
-												{...register('name', {
-													required: {
-														value: true,
-														message: 'Please enter your name',
-													},
-													maxLength: {
-														value: 30,
-														message: 'Please use 30 characters or less',
-													},
-												})}
-												className='form-control formInput'
-												placeholder='Name'
-											></input>
-											{errors.name && (
-												<span className='errorMessage'>
-													{errors.name.message}
-												</span>
-											)}
-										</div>
-										<div className='col-6'>
-											<input
-												type='email'
-												name='email'
-												{...register('email', {
-													required: true,
-													pattern:
-														/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-												})}
-												className='form-control formInput'
-												placeholder='Email address'
-											></input>
-											{errors.email && (
-												<span className='errorMessage'>
-													Please enter a valid email address
-												</span>
-											)}
-										</div>
+									{/* <div className='row formRow ip-5'> */}
+									<div className='ip-3 '>
+										<input
+											type='text'
+											name='name'
+											{...register('name', {
+												required: {
+													value: true,
+													message: 'Please enter your name',
+												},
+												maxLength: {
+													value: 30,
+													message: 'Please use 30 characters or less',
+												},
+											})}
+											className='form-control formInput'
+											placeholder='Name'
+										></input>
+										{errors.name && (
+											<span className='errorMessage'>
+												{errors.name.message}
+											</span>
+										)}
 									</div>
+									<div className='ip-3'>
+										<input
+											type='email'
+											name='email'
+											{...register('email', {
+												required: true,
+												pattern:
+													/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+											})}
+											className='form-control formInput'
+											placeholder='Email address'
+										></input>
+										{errors.email && (
+											<span className='errorMessage'>
+												Please enter a valid email address
+											</span>
+										)}
+									</div>
+									{/* 	</div> */}
 									{/* Row 2 of form */}
 									<div className='row formRow ip-3'>
 										<div className='col'>
@@ -185,11 +186,11 @@ const Contact = () => {
 								</form>
 							</div>
 							<ToastContainer />
-						</div>
-						<div className='col-6 ip-5'>
+						</Col>
+						<Col className='ip-5'>
 							<img src={prefix + '/digital-world-map.jpg'} alt='' />
-						</div>
-					</div>
+						</Col>
+					</Row>
 				</div>
 			</div>
 		</>

@@ -83,6 +83,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 hr {
@@ -4572,7 +4575,7 @@ fieldset:disabled .btn {
 
 .navbar-nav .nav-link {
   padding-right: 0;
-  padding-left: 0;
+  padding-left: 10%;
 }
 
 
