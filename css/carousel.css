@@ -23,7 +23,7 @@
 
 @media (min-width: 768px) {
     .slider {
-        width: 720px;
+        width: 100%;
         text-align: center;
         overflow: hidden;
       }
@@ -35,7 +35,7 @@
 
 @media (min-width: 992px) {
     .slider {
-        width: 960px;
+        width: 100%;
         text-align: center;
         overflow: hidden;
       }
@@ -49,8 +49,10 @@
 
 @media (min-width: 1200px) {
     .slider {
-        width: 1140px;
+        width: 95%;
         text-align: center;
+        align-items: center;
+        align-content: center;
         overflow: hidden;
       }
       .slides > div {

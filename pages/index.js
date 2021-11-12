@@ -1,8 +1,8 @@
-import { server } from '../config2';
 import Meta from '../components/Meta';
 import Testimonial from '../components/Testimonial';
 import ArticleList from '../components/ArticleList';
 import Header from '../components/Header';
+import Container from 'react-bootstrap/Container';
 
 import Services from '../components/Services';
 
@@ -10,18 +10,21 @@ export default function Home({ projects }) {
 	return (
 		<>
 			<Meta title='Welcome to Lithops' />
+
 			<Header />
-			<div className='container' /* style={{ backgroundColor: '#f8f9fa' }} */>
-				<h2 className='ip-5'>Our Services </h2>
+			<Container fluid>
+				<div className='container' /* style={{ backgroundColor: '#f8f9fa' }} */>
+					<h2 className='ip-5'>Our Services </h2>
 
-				<Services />
-			</div>
-			<Testimonial />
-			<div className='container'>
-				<h2 className='ip-5'>Projects </h2>
+					<Services />
+				</div>
+				<Testimonial />
+				<div className='container'>
+					<h2 className='ip-5'>Projects </h2>
 
-				<ArticleList projects={projects} />
-			</div>
+					<ArticleList projects={projects} />
+				</div>
+			</Container>
 		</>
 	);
 }

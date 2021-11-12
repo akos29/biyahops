@@ -12,7 +12,7 @@ const gallery = () => {
 
 	return (
 		<>
-			<Container className='ip-5'>
+			<Container fluid>
 				<h1 className='ip-5' style={{ textAlign: 'center' }}>
 					Gallery
 				</h1>
@@ -130,7 +130,7 @@ const gallery = () => {
 					</Col>
 				</Row>
 			</Container>
-			<div className='ip-5' style={{ textAlign: 'center' }}>
+			<Container className='ip-5' style={{ textAlign: 'center' }}>
 				<Row className='ip-5'>
 					<h2>Our Activities</h2>
 					<Col sm={3}>
@@ -216,7 +216,7 @@ const gallery = () => {
 						/>
 					</Col>
 				</Row>
-			</div>
+			</Container>
 		</>
 	);
 };

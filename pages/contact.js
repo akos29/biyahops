@@ -1,11 +1,13 @@
-import Contact from "../components/Contact";
+import Contact from '../components/Contact';
+import Meta from '../components/Meta';
 
 const contact = () => {
-  return (
-    <>
-      <Contact />
-    </>
-  );
+	return (
+		<>
+			<Meta title='Contact Lithops' />
+			<Contact />
+		</>
+	);
 };
 
 export default contact;

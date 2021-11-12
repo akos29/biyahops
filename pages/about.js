@@ -10,6 +10,7 @@ import OurHistory_A from '../components/OurHistory_A';
 import VisionMission_A from '../components/VisionMission_A';
 import TeamMembers_A from '../components/TeamMembers_A';
 import Contact from '../components/Contact';
+import Container from 'react-bootstrap/Container';
 
 const about = () => {
 	return (
@@ -18,7 +19,7 @@ const about = () => {
 				title='About BD Lithops construction'
 				keyword='Where bdlithops work, bd lithops values, history, teamwork'
 			/>
-			<div className='ip-5'>
+			<Container fluid>
 				{/* 	<h1 className='ip-5'>About</h1> */}
 
 				<Tab.Container
@@ -88,7 +89,7 @@ const about = () => {
 						</Col>
 					</Row>
 				</Tab.Container>
-			</div>
+			</Container>
 		</>
 	);
 };
