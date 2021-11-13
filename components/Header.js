@@ -8,7 +8,7 @@ const Header = () => {
 
 	return (
 		<>
-			<div>
+			<div className='container'>
 				<Slider />
 			</div>
 		</>

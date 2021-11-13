@@ -1,151 +1,10 @@
- /*.footerAddress {
-  position: absolute;
-  left: 10px;
-  display: flex;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding: 10vh 0px 20px 30px; 
-}*/
-
- /* .footerVision {
-  position: relative;
-  left: 10px;
-  display: flex;
- margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding: 20px 30px;
-  font-size: 1rem; 
-}*/
-/* 
-.reference {
-  position: relative;
-  left: 0px;
-  display: flex;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding: 20px 30px;
-} */
-
-/* .footerHeader {
-  padding-top: 5%;
-}
- */
-/* a.footerLink {
-  display: block;
-  position: relative;
-  left: 0;
-  color: var(--body-bg);
-  font-size: 1rem;
-} */
-
-/* a.footerLink:hover {
-  color: var(--bs-light);
-  font-size: 1.01rem;
-  transition: ease;
-}
- */
-/* footer.footerBlock {
-  margin-top: 15px;
-  padding: 0;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 0.5px #f1c04a,
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-} */
-
-/* .footerBottomBlock {
-  position: relative;
-  bottom: 0;
-  color: var(--bs-secondary);
-  font-size: 1.1rem;
-  line-height: 1.2em;
-  padding: 10px 0px;
-  min-height: 30px;
-  float: left;
-  background-color: var(--bs-gray-dark);
-  width: 100%;
-  align-items: center;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.2),
-    0.3em 0.3em 1em rgba(0, 0, 0, 1);
-}
- */
-/* .footerLogo {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-/* .footerBottomBlock p {
-  text-align: center;
-} */
-/* .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-
-/* .footerBlock {
-  min-height: 220px;
-  padding-top: 0;
-  position: relative;
-  background-color: var(--bs-secondary);
-  color: var(--bs-body-color);
-  margin-top: 10px;
-  border-top: 2px solid var(--bs-primary);
-  display: flex;
-} */
-/* @media (max-width: 979px) {
-  .footerBlock {
-    min-height: 350px;
-  }
-} */
-/* .footerBlock .region-footer {
-  padding: 5px 40px 0 40px;
-  display: flex;
-  flex-flow: row wrap;
-} */
-/* .footerBlock .region-footer:before,
-.footerBlock .region-footer:after {
-  content: " ";
-  display: table;
-}
-.footerBlock .region-footer:after {
-  clear: both;
-}
-.footerBlock .block-block {
-  float: left;
-  width: 50%;
-  margin-bottom: 50px;
-}
-.footerBlock .sharing-block-footer .block-title {
-  color: #fff;
-  font-size: 1em;
-  line-height: 1.5em;
-  font-weight: bold;
-  margin-bottom: 5px;
-} */
+ 
 
 
 .footerBlock li {
   list-style: none;
   margin: 0 10px 10px 0px;
 }
-
-/* .footerBlock .about-lafarge-holcim {
-  margin-bottom: 20px;
-  order: 2;
-} */
-/* .footerBlock .about-lafarge-holcim .block-title {
-  font-size: 1em;
-  line-height: 1.27273em;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 20px;
-} */
 
 
 .footerBlock .about-lafarge-holcim a,
@@ -190,43 +49,59 @@ a:hover.footer {
 
 .ftMain {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: stretch;
-  justify-content: space-between;
-  flex-direction:row;
-  margin-left: auto;
-  row-gap: 10px;
-  column-gap: 2em;
-  margin : 0 3em;
-padding: 2em;
-font-size: 1.1rem;
-    
+  gap: 20px 40px;
+padding: 5%;
 
 
 }
-.ftMain> .item3 {
- flex: 2;
+.ftMain> .item {
+  flex: 1 31%;
+    align-self: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    vertical-align: middle;
 }
   
-
+/* .ftMain> .item2 {
+  flex: 2 40%;
+    align-self: auto;
+    padding-left: 4%;
+} */
 
 @media only screen and (max-width: 979px ) {
-  .ftMain {
-    justify-content: space-around;
-    align-content: center;
-    font-size:1rem ;
-    margin : 0 2em;
-  
+  .ftMain> .item {
+    flex: 1 40%;
+    padding-left: 10%;
+    align-self: auto;
+    line-height: 2px;
+  }
+  .ftMain> .item3 {
+    display: none;
   }
 }
 @media only screen and (max-width: 659px ) {
-  .ftMain {
-  padding: 1rem ;
-  margin: 2rem 1rem; 
-  flex-direction: column;
-  justify-content:flex-start; 
-  align-content: center;
-  font-size: 1.1rem;
+  .ftMain> .item {
+    flex: 1 100%;
+    align-self: auto;
+    padding-left: 10%;
+    text-align: center;
+    line-height: 5px;
+    letter-spacing: .1rem;
+
+  }
+/*   .ftMain> .item2 {
+    flex: 1 100%;
+      align-self: center;
+      padding-left: 4%;
+      align-content: center;
+      vertical-align: middle;
+      text-align: center;
+  }  */
+  .ftMain> .item3 {
+    display: none;
   }
 }
 

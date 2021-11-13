@@ -17,7 +17,7 @@ const Footer = () => {
 		<>
 			<footer className={footerStyle.footer}>
 				<section className={footerStyle.ftMain}>
-					<div className={footerStyle.Item1}>
+					<div className={footerStyle.item}>
 						<h2 className={footerStyle.ftTitle}>About</h2>
 						<ul className={footerStyle.ftUl}>
 							<li>
@@ -41,7 +41,24 @@ const Footer = () => {
 							</li>
 						</ul>
 					</div>
-					<div className={footerStyle.Item2}>
+					<div className={cx(footerStyle.item, footerStyle.item2)}>
+						<h2 className={footerStyle.ftTitle}>Stay Updated</h2>
+						<p>Subscribe to our newsletter to get our latest news.</p>
+						<form className={footerStyle.footerForm}>
+							<input
+								type='email'
+								name='email'
+								placeholder='Enter email address'
+								className={footerStyle.footerForm}
+							/>
+							<input
+								type='submit'
+								value='Subscribe'
+								className={footerStyle.footerForm}
+							/>
+						</form>
+					</div>
+					<div className={cx(footerStyle.item, footerStyle.item3)}>
 						<h2 className={footerStyle.ftTitle}>Resources</h2>
 						<ul className={footerStyle.ftUl}>
 							<li>
@@ -86,23 +103,6 @@ const Footer = () => {
 							</li>
 						</ul>
 					</div> */}
-					<div className={footerStyle.Item3}>
-						<h2 className={footerStyle.ftTitle}>Stay Updated</h2>
-						<p>Subscribe to our newsletter to get our latest news.</p>
-						<form className={footerStyle.footerForm}>
-							<input
-								type='email'
-								name='email'
-								placeholder='Enter email address'
-								className={footerStyle.footerForm}
-							/>
-							<input
-								type='submit'
-								value='Subscribe'
-								className={footerStyle.footerForm}
-							/>
-						</form>
-					</div>
 				</section>
 
 				<section className={footerStyle.ftSocial}>

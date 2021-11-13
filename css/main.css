@@ -83,9 +83,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 
 }
 
 hr {
@@ -4570,6 +4568,8 @@ fieldset:disabled .btn {
   margin-bottom: 0;
   list-style: none;
   margin-left: 10%;
+  text-align: center;
+  gap: 10px;
   
 }
 
@@ -4803,14 +4803,16 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-            padding-left: 5%;
+            padding-left: auto;
+            padding-right: auto;
             font-size: 20px;
+            gap: 10px;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
+   /*  padding-right: 0.5rem; */
     padding-left: 0.5rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
@@ -12135,6 +12137,9 @@ fieldset:disabled .btn {
 
 main {
   padding: 0 0 2% 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 body {

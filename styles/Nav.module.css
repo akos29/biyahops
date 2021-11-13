@@ -57,7 +57,10 @@ a.social:hover, .navLink:hover {
 
 .brand {
   display: flex;
-  height: 120%;
+  height: 75px;
+  width: 120px;
+  object-fit: cover;
+
   padding-left: 0px;
   /* border: 2px solid black; */
   box-sizing: border-box;
@@ -115,14 +118,14 @@ a.social:hover, .navLink:hover {
 @media (max-width: 992px) {
   .brand {
     display: flex;
-    height: 50px;
+    height: 75px;
+    width: 120px;
     padding-left: 0px;
-    /* border: 2px solid black; */
+    object-fit:cover;
     box-sizing: border-box;
     top: 0px;
-    left: 0;
     position: absolute;
-    border-radius:25px;
+    border-radius:0 5px 5px 5px;
     
   }
   .myNav {
