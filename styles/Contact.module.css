@@ -8,6 +8,32 @@
 }
 
 .container{
+
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px 20px;
+    
+  }
+  
+  .item{
+    flex: 1 30%;
+  }
+
+  @media all and (max-width: 992px) { 
+    .item{
+      flex: 1 35%;
+    }
+  }
+  @media all and (max-width: 768px) { 
+    .item{
+      flex: 1 50%;
+    }
+  }
+  
+
+.contain{
     background: var(--bs-primary);
      height: '30vh'
 }

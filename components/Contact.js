@@ -65,7 +65,7 @@ const Contact = () => {
 
 	return (
 		<>
-			<Container fluid className={contactStyle.container}>
+			<Container fluid className={contactStyle.contain}>
 				<Container>
 					<h1 className={cx(contactStyle.header, 'ip-5')}>Welcome</h1>
 					<p className={cx(contactStyle.text, 'ip-5')}>
@@ -78,119 +78,117 @@ const Contact = () => {
 			</Container>
 
 			<div className='ContactForm'>
-				<div className='container'>
-					<Row className='ip-5'>
-						<Col className={cx(contactStyle.contactForm, 'text-center ip-3')}>
-							<div className={cx(contactStyle.contactForm)}>
-								<form
-									id='contact-form ip-3'
-									onSubmit={handleSubmit(onSubmit)}
-									noValidate
-								>
-									{/* Row 1 of form */}
-									{/* <div className='row formRow ip-5'> */}
-									<div className='ip-3 '>
+				<div className={contactStyle.container}>
+					<div
+						className={cx(
+							contactStyle.contactForm,
+							'text-center ip-3',
+							contactStyle.item
+						)}
+					>
+						<div className={cx(contactStyle.contactForm)}>
+							<form
+								id='contact-form ip-3'
+								onSubmit={handleSubmit(onSubmit)}
+								noValidate
+							>
+								{/* Row 1 of form */}
+								{/* <div className='row formRow ip-5'> */}
+								<div className='ip-3 '>
+									<input
+										type='text'
+										name='name'
+										{...register('name', {
+											required: {
+												value: true,
+												message: 'Please enter your name',
+											},
+											maxLength: {
+												value: 30,
+												message: 'Please use 30 characters or less',
+											},
+										})}
+										className='form-control formInput'
+										placeholder='Name'
+									></input>
+									{errors.name && (
+										<span className='errorMessage'>{errors.name.message}</span>
+									)}
+								</div>
+								<div className='ip-3'>
+									<input
+										type='email'
+										name='email'
+										{...register('email', {
+											required: true,
+											pattern:
+												/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+										})}
+										className='form-control formInput'
+										placeholder='Email address'
+									></input>
+									{errors.email && (
+										<span className='errorMessage'>
+											Please enter a valid email address
+										</span>
+									)}
+								</div>
+								{/* 	</div> */}
+								{/* Row 2 of form */}
+								<div className='row formRow ip-3'>
+									<div className='col'>
 										<input
 											type='text'
-											name='name'
-											{...register('name', {
+											name='subject'
+											{...register('subject', {
 												required: {
 													value: true,
-													message: 'Please enter your name',
+													message: 'Please enter a subject',
 												},
 												maxLength: {
-													value: 30,
-													message: 'Please use 30 characters or less',
+													value: 75,
+													message: 'Subject cannot exceed 75 characters',
 												},
 											})}
 											className='form-control formInput'
-											placeholder='Name'
+											placeholder='Subject'
 										></input>
-										{errors.name && (
+										{errors.subject && (
 											<span className='errorMessage'>
-												{errors.name.message}
+												{errors.subject.message}
 											</span>
 										)}
 									</div>
-									<div className='ip-3'>
-										<input
-											type='email'
-											name='email'
-											{...register('email', {
+								</div>
+								{/* Row 3 of form */}
+								<div className='row formRow ip-3'>
+									<div className='col'>
+										<textarea
+											rows={3}
+											name='message'
+											{...register('message', {
 												required: true,
-												pattern:
-													/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
 											})}
 											className='form-control formInput'
-											placeholder='Email address'
-										></input>
-										{errors.email && (
+											placeholder='Message'
+										></textarea>
+										{errors.message && (
 											<span className='errorMessage'>
-												Please enter a valid email address
+												Please enter a message
 											</span>
 										)}
 									</div>
-									{/* 	</div> */}
-									{/* Row 2 of form */}
-									<div className='row formRow ip-3'>
-										<div className='col'>
-											<input
-												type='text'
-												name='subject'
-												{...register('subject', {
-													required: {
-														value: true,
-														message: 'Please enter a subject',
-													},
-													maxLength: {
-														value: 75,
-														message: 'Subject cannot exceed 75 characters',
-													},
-												})}
-												className='form-control formInput'
-												placeholder='Subject'
-											></input>
-											{errors.subject && (
-												<span className='errorMessage'>
-													{errors.subject.message}
-												</span>
-											)}
-										</div>
-									</div>
-									{/* Row 3 of form */}
-									<div className='row formRow ip-3'>
-										<div className='col'>
-											<textarea
-												rows={3}
-												name='message'
-												{...register('message', {
-													required: true,
-												})}
-												className='form-control formInput'
-												placeholder='Message'
-											></textarea>
-											{errors.message && (
-												<span className='errorMessage'>
-													Please enter a message
-												</span>
-											)}
-										</div>
-									</div>
-									<Button
-										className='submit-btn'
-										variant='primary'
-										type='submit'
-									>
-										Submit
-									</Button>
-								</form>
-							</div>
-							<ToastContainer />
-						</Col>
-						<Col className='ip-5'>
-							<img src={prefix + '/digital-world-map.jpg'} alt='' />
-						</Col>
-					</Row>
+								</div>
+								<Button className='submit-btn' variant='primary' type='submit'>
+									Submit
+								</Button>
+							</form>
+						</div>
+						<ToastContainer />
+					</div>
+					<div className={contactStyle.item}>
+						<img src={prefix + '/digital-world-map.jpg'} alt='' />
+					</div>
 				</div>
 			</div>
 		</>
