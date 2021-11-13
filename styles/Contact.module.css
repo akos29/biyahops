@@ -28,7 +28,7 @@
   }
   @media all and (max-width: 768px) { 
     .item{
-      flex: 1 50%;
+      flex: 1 100%;
     }
   }
   
