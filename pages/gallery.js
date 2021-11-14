@@ -1,7 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 import projectStyle from '../styles/Project.module.css';
 import workStyle from '../styles/HowWeWork.module.css';
 import Link from 'next/link';
@@ -12,211 +10,78 @@ const gallery = () => {
 
 	return (
 		<>
-			<Container fluid>
-				<h1 className='ip-5' style={{ textAlign: 'center' }}>
-					Gallery
-				</h1>
-				<Row className='justify-content-md-center g-5'>
-					<Col md={3}>
-						<div className={cx(projectStyle.flipBox, 'ip-1')}>
-							<div className={cx(projectStyle.flipBoxInner, 'center')}>
-								<div
-									className={cx(
-										projectStyle.flipBoxFront,
-										projectStyle.bgImage,
-										projectStyle.bld
-									)}
-								>
-									<h4 className={projectStyle.bgText}>Building Construction</h4>
-								</div>
-								<Link href='/Services/building' as={`/project/building`}>
-									<div className={cx(projectStyle.flipBoxBack)}>
-										<h4 className='ip-5'>Building Construction</h4>
-										<p className={(projectStyle.text, 'ip-1')}>
-											Cillum laboris deserunt voluptate et deserunt sit cillum
-											aliquip consequat proident aute voluptate veniam. Nisi
-											culpa occaecat adipisicing laboris deserunt aute .
-										</p>
-										<button className='btn btn-danger ip-2'>Read More</button>
-									</div>
-								</Link>
-							</div>
-						</div>
-					</Col>
-
-					{/* Road */}
-
-					<Col md={3}>
-						<div className={cx(projectStyle.flipBox, 'ip-1')}>
-							<div className={cx(projectStyle.flipBoxInner, 'center')}>
-								<div
-									className={cx(
-										projectStyle.flipBoxFront,
-										projectStyle.bgImage,
-										projectStyle.road
-									)}
-								>
-									<h4 className={projectStyle.bgText}>Road Construction</h4>
-								</div>
-								<Link href='/Services/Road' as={`/project/Road`}>
-									<div className={cx(projectStyle.flipBoxBack)}>
-										<h4 className='ip-5'>Road Construction</h4>
-										<p className={(projectStyle.text, 'ip-1')}>
-											Cillum laboris deserunt voluptate et deserunt sit cillum
-											aliquip consequat proident aute voluptate veniam.
-										</p>
-										<button className='btn btn-danger ip-2'>Read More</button>
-									</div>
-								</Link>
-							</div>
-						</div>
-					</Col>
-
-					{/*Landscape   */}
-
-					<Col md={3}>
-						<div className={cx(projectStyle.flipBox, 'ip-1')}>
-							<div className={cx(projectStyle.flipBoxInner, 'center')}>
-								<div
-									className={cx(
-										projectStyle.flipBoxFront,
-										projectStyle.bgImage,
-										projectStyle.landscape
-									)}
-								>
-									<h4 className={projectStyle.bgText}>Landscape Design</h4>
-								</div>
-								<Link href='/services/Landscape' as={`/service/Landscape`}>
-									<div className={cx(projectStyle.flipBoxBack)}>
-										<h4 className='ip-5'>Landscape Design</h4>
-										<p className={(projectStyle.text, 'ip-1')}>
-											Cillum laboris deserunt voluptate et deserunt sit cillum
-											aliquip consequat proident aute voluptate veniam. Nisi
-											culpa occaecat adipisicing laboris deserunt aute .
-										</p>
-										<button className='btn btn-danger ip-2'>Read More</button>
-									</div>
-								</Link>
-							</div>
-						</div>
-					</Col>
-
-					{/* Finishing */}
-					<Col md={3}>
-						<div className={cx(projectStyle.flipBox, 'ip-1')}>
-							<div className={cx(projectStyle.flipBoxInner, 'center')}>
-								<div
-									className={cx(
-										projectStyle.flipBoxFront,
-										projectStyle.bgImage,
-										projectStyle.finishing
-									)}
-								>
-									<h4 className={projectStyle.bgText}>Finishing Works</h4>
-								</div>
-								<Link href='/Services/Finishing' as={`/project/Finishing`}>
-									<div className={cx(projectStyle.flipBoxBack)}>
-										<h4 className='ip-5'>Finishing Works</h4>
-										<p className={(projectStyle.text, 'ip-1')}>
-											Cillum laboris deserunt voluptate et deserunt sit cillum
-											aliquip consequat proident aute voluptate veniam. Nisi
-											culpa occaecat adipisicing laboris deserunt aute .
-										</p>
-										<button className='btn btn-danger ip-2'>Read More</button>
-									</div>
-								</Link>
-							</div>
-						</div>
-					</Col>
-				</Row>
-			</Container>
-			<Container className='ip-5' style={{ textAlign: 'center' }}>
-				<Row className='ip-5'>
-					<h2>Our Activities</h2>
-					<Col sm={3}>
+			<div className='container' style={{ backgroundColor: '#edf1fc' }}>
+				<h2 className='ip-5'>Our Activities</h2>
+				<div className={workStyle.container}>
+					<div className={workStyle.item}>
 						{' '}
 						<img
 							className={workStyle.image}
 							src={prefix + '/road.jpg'}
 							alt='How we work'
-							/* width='300px'
-							height='500px' */
+							style={{ animationDuration: '1s' }}
 						/>
-					</Col>
-					<Col sm={3}>
-						{' '}
+					</div>
+					<div className={workStyle.item}>
+						<img
+							className={workStyle.image}
+							src={prefix + '/landscape.jpg'}
+							alt='Landscaping'
+							style={{ animationDuration: '2s' }}
+						/>
+					</div>
+					<div className={workStyle.item}>
 						<img
 							className={workStyle.image}
 							src={prefix + '/slide2.jpg'}
 							alt='How we work'
-							/* width='300px'
-							height='500px' */
+							style={{ animationDuration: '3s' }}
 						/>
-					</Col>
-					<Col sm={3}>
-						{' '}
+					</div>
+					<div className={workStyle.item}>
 						<img
 							className={workStyle.image}
 							src={prefix + '/slide1.jpg'}
 							alt='How we work'
 							/* width='300px'
-							height='500px' */
+							height='500px' */ style={{ animationDuration: '4s' }}
 						/>
-					</Col>
-					<Col sm={3}>
-						{' '}
+					</div>
+					<div className={workStyle.item}>
 						<img
 							className={workStyle.image}
 							src={prefix + '/Internal-Wall-Painting.jpg'}
 							alt='How we work'
 							/* width='300px'
-							height='500px' */
+							height='500px' */ style={{ animationDuration: '4.5s' }}
 						/>
-					</Col>
-				</Row>
-				<Row className='ip-5'>
-					<Col sm={3}>
-						{' '}
+					</div>
+					<div className={workStyle.item}>
 						<img
 							className={workStyle.image}
 							src={prefix + '/roadConstruction.jfif'}
 							alt='How we work'
-							/* width='300px'
-							height='500px' */
+							style={{ animationDuration: '5s' }}
 						/>
-					</Col>
-					<Col sm={3}>
-						{' '}
+					</div>
+					<div className={workStyle.item}>
 						<img
 							className={workStyle.image}
 							src={prefix + '/volvo.jpg'}
 							alt='How we work'
-							/* width='300px'
-							height='500px' */
+							style={{ animationDuration: '5s' }}
 						/>
-					</Col>
-					<Col sm={3}>
-						{' '}
+					</div>
+					<div className={workStyle.item}>
 						<img
 							className={workStyle.image}
-							src={prefix + '/slide3.jpg'}
+							src={prefix + '/Smooth-Wheel-Compactor.jpg'}
 							alt='How we work'
-							/* width='300px'
-							height='500px' */
+							style={{ animationDuration: '5s' }}
 						/>
-					</Col>
-					<Col sm={3}>
-						{' '}
-						<img
-							className={workStyle.image}
-							src={prefix + '/landscape2.jpg'}
-							alt='How we work'
-							/* width='300px'
-							height='500px' */
-						/>
-					</Col>
-				</Row>
-			</Container>
+					</div>
+				</div>
+			</div>
 		</>
 	);
 };
