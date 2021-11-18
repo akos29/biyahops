@@ -5,7 +5,6 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import contactStyle from '../styles/Contact.module.css';
 import 'react-toastify/dist/ReactToastify.min.css';
-import { Row, Col } from 'react-bootstrap';
 
 import { init } from 'emailjs-com';
 
